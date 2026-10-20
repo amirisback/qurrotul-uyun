@@ -60,6 +60,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/siklus-haid" className="hover:text-primary transition-colors">
+                  Siklus Haid & Masa Subur
+                </Link>
+              </li>
+              <li>
                 <Link href="/favorit" className="hover:text-primary transition-colors">
                   Item Favorit
                 </Link>

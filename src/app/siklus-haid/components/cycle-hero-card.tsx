@@ -2,6 +2,7 @@
 
 import type { EvaluatedDayStatus, UserCycleProfile } from "@/types/cycle-tracker";
 import { formatGregorianFull } from "@/lib/calendar-engine";
+import { parseISODate } from "@/lib/cycle-engine";
 
 interface CycleHeroCardProps {
   status: EvaluatedDayStatus;
@@ -20,7 +21,7 @@ export function CycleHeroCard({
   onOpenFiqihGuide,
   onOpenOnboarding,
 }: CycleHeroCardProps) {
-  const targetDate = new Date(status.isoDate);
+  const targetDate = parseISODate(status.isoDate);
   const formattedDate = formatGregorianFull(targetDate);
   const cycleLen = profile.averageCycleLength || 28;
   const progressRatio = Math.min(Math.max(status.cycleDayNumber / cycleLen, 0), 1);

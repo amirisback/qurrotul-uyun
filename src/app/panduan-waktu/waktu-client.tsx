@@ -77,6 +77,9 @@ function useHaidConfigStore(): [
         localStorage.removeItem(HAID_STORAGE_KEY);
         setLocalOverride(null);
       }
+      if (typeof window !== "undefined") {
+        window.dispatchEvent(new Event("storage"));
+      }
     } catch {
       // Ignore storage errors
     }

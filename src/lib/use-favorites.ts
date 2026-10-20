@@ -22,11 +22,14 @@ function subscribe(callback: () => void) {
   };
 }
 
+const emptyBabs: number[] = [];
+const emptyDoas: string[] = [];
+
 let cachedBabsRaw: string | null = null;
 let cachedBabs: number[] = [];
 
 function getBabsSnapshot(): number[] {
-  if (typeof window === "undefined") return [];
+  if (typeof window === "undefined") return emptyBabs;
   const raw = localStorage.getItem(FAVORITE_BABS_KEY);
   if (raw !== cachedBabsRaw) {
     cachedBabsRaw = raw;
@@ -43,7 +46,7 @@ let cachedDoasRaw: string | null = null;
 let cachedDoas: string[] = [];
 
 function getDoasSnapshot(): string[] {
-  if (typeof window === "undefined") return [];
+  if (typeof window === "undefined") return emptyDoas;
   const raw = localStorage.getItem(FAVORITE_DOAS_KEY);
   if (raw !== cachedDoasRaw) {
     cachedDoasRaw = raw;
@@ -55,9 +58,6 @@ function getDoasSnapshot(): string[] {
   }
   return cachedDoas;
 }
-
-const emptyBabs: number[] = [];
-const emptyDoas: string[] = [];
 
 function getServerSnapshotBabs(): number[] {
   return emptyBabs;

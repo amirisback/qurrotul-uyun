@@ -14,12 +14,15 @@ export async function generateMetadata({
 }: KitabPageProps): Promise<Metadata> {
   const { bab } = await searchParams;
   if (bab) {
-    const babData = getBabById(Number(bab));
-    if (babData) {
-      return {
-        title: `${babData.nomor}: ${babData.judul} — Qurrotul Uyun`,
-        description: babData.deskripsiRingkas,
-      };
+    const babId = parseInt(bab, 10);
+    if (!Number.isNaN(babId)) {
+      const babData = getBabById(babId);
+      if (babData) {
+        return {
+          title: `${babData.nomor}: ${babData.judul} — Qurrotul Uyun`,
+          description: babData.deskripsiRingkas,
+        };
+      }
     }
   }
 
@@ -35,21 +38,23 @@ export default async function KitabPage({ searchParams }: KitabPageProps) {
 
   // If specific chapter is requested, render the full reader
   if (bab) {
-    const babId = Number(bab);
-    const currentBab = getBabById(babId);
+    const babId = parseInt(bab, 10);
+    if (!Number.isNaN(babId)) {
+      const currentBab = getBabById(babId);
 
-    if (currentBab) {
-      const prevBab = getBabById(babId - 1);
-      const nextBab = getBabById(babId + 1);
+      if (currentBab) {
+        const prevBab = getBabById(babId - 1);
+        const nextBab = getBabById(babId + 1);
 
-      return (
-        <ReaderClient
-          currentBab={currentBab}
-          prevBab={prevBab}
-          nextBab={nextBab}
-          allBab={allBab}
-        />
-      );
+        return (
+          <ReaderClient
+            currentBab={currentBab}
+            prevBab={prevBab}
+            nextBab={nextBab}
+            allBab={allBab}
+          />
+        );
+      }
     }
   }
 

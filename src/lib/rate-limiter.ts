@@ -108,13 +108,14 @@ export function checkRateLimit(
   if (activeTimestamps.length >= limit) {
     const oldestInWindow = activeTimestamps[0] ?? now;
     const retryAfterSec = Math.max(1, Math.ceil((oldestInWindow + windowMs - now) / 1000));
+    const resetWhenLimitedSec = Math.ceil((oldestInWindow + windowMs) / 1000);
 
     requestLogs.set(identifier, activeTimestamps);
     return {
       success: false,
       limit,
       remaining: 0,
-      reset: resetTimestampSec,
+      reset: resetWhenLimitedSec,
       retryAfter: retryAfterSec,
     };
   }

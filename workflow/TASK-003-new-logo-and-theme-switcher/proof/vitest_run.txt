@@ -1,0 +1,27 @@
+$ bunx vitest run
+ RUN  v5.0.5 D:/Project/qurrotul-uyun
+
+ ✓ src/lib/__tests__/cycle-engine.test.ts (13 tests) 82ms
+ ✓ cli/index.test.ts (5 tests) 27ms
+ ✓ src/lib/__tests__/proxy-security.test.ts (6 tests) 16ms
+ ✓ src/lib/__tests__/rate-limiter.test.ts (9 tests) 83ms
+ ✓ src/lib/__tests__/cycle-qa-security.test.tsx (12 tests) 132ms
+ ✓ src/app/_components/__tests__/islamic-ornaments.test.tsx (15 tests) 118ms
+ ✓ src/app/_components/__tests__/theme-switcher.test.tsx (7 tests) 57ms
+ ✓ src/lib/__tests__/calendar-engine.test.ts (25 tests) 318ms
+ ✓ cli/commands/hello.test.ts (2 tests) 15ms
+ ✓ src/lib/__tests__/proxy.test.ts (4 tests) 38ms
+ ✓ src/app/siklus-haid/__tests__/siklus-haid.test.tsx (9 tests) 90ms
+ ✓ src/app/panduan-waktu/__tests__/calendar-waktu.test.tsx (14 tests) 254ms
+ ✓ src/__tests__/task-003-qa-verification.test.tsx (18 tests) 69ms
+stderr | src/__tests__/e2e-app-flow.test.tsx > End-to-End (E2E) Application Flow Suite > 5. Cryptographic Security & Obfuscator Round-Trip > safely rejects tampered encrypted payloads
+[Decryption Error (Possibly Tampered or Invalid Key)]: Unsupported state or unable to authenticate data
+
+ ✓ src/__tests__/e2e-app-flow.test.tsx (25 tests) 226ms
+
+ Test Files  14 passed (14)
+      Tests  164 passed (164)
+   Start at  00:25:27
+   Duration  1.45s (import 45%, tests 32%, transform 19%, worker 4%)
+
+# Exit Code: 0 (All 14 test suites, 164 tests passed)

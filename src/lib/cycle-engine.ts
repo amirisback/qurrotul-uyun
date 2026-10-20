@@ -369,7 +369,7 @@ export function recalculateRamadhanQadha(
  * Sync helper with Panduan Waktu Kalender
  */
 export function syncWithPanduanWaktu(
-  isoDate: string,
+  _isoDate: string,
   evaluatedStatus: EvaluatedDayStatus
 ): {
   isHaidActive: boolean;

@@ -129,6 +129,11 @@ export function Header() {
               )}
             </Link>
 
+            {/* Theme Switcher (Desktop & Tablet) */}
+            <div className="hidden sm:flex items-center">
+              <ThemeSwitcher variant="compact" />
+            </div>
+
             {/* Mobile Drawer Hamburger */}
             <button
               onClick={() => setIsDrawerOpen(true)}
@@ -140,9 +145,8 @@ export function Header() {
               </svg>
             </button>
 
-            {/* Switchers preserved but hidden per GUIDELINE.md pasal 14 */}
+            {/* Language Switcher preserved but hidden per GUIDELINE.md pasal 14 */}
             <div className="hidden" aria-hidden="true">
-              <ThemeSwitcher />
               <LanguageSwitcher />
             </div>
           </div>

@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "./src"),
+      "server-only": path.resolve(import.meta.dirname, "./src/lib/__mocks__/server-only.ts"),
     },
   },
 });

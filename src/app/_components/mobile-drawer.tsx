@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { ThemeSwitcher } from "./theme-switcher";
 
 interface MobileDrawerProps {
   isOpen: boolean;
@@ -100,6 +101,14 @@ export function MobileDrawer({ isOpen, onClose, onOpenSearch }: MobileDrawerProp
             );
           })}
         </nav>
+
+        {/* Theme Preferences Section */}
+        <div className="pt-4 pb-2 border-t border-border">
+          <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2.5">
+            Tema Tampilan
+          </p>
+          <ThemeSwitcher variant="drawer" />
+        </div>
 
         {/* Footer */}
         <div className="pt-4 border-t border-border text-xs text-muted-foreground text-center">

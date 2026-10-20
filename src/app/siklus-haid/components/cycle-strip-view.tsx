@@ -33,7 +33,7 @@ export function CycleStripView({
     return result;
   }, [getEvaluatedDay]);
 
-  // Full 35-day month window if toggled
+  // Full 35 or 42-day month window if toggled
   const fullMonthDays = useMemo(() => {
     if (!showFullMonth) return [];
     const base = parseISODate(selectedIsoDate);
@@ -43,12 +43,13 @@ export function CycleStripView({
     const firstDay = new Date(year, month, 1);
     const startOffset = firstDay.getDay(); // 0 = Sunday
     const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const daysInPrevMonth = new Date(year, month, 0).getDate();
 
     const days: EvaluatedDayStatus[] = [];
 
     // Leading days
     for (let i = startOffset - 1; i >= 0; i--) {
-      const d = new Date(year, month, -i);
+      const d = new Date(year, month - 1, daysInPrevMonth - i);
       days.push(getEvaluatedDay(d));
     }
 
@@ -58,8 +59,9 @@ export function CycleStripView({
       days.push(getEvaluatedDay(d));
     }
 
-    // Trailing days to reach 35
-    const remaining = 35 - days.length;
+    // Trailing days to reach full 35 or 42 grid cells
+    const totalCells = days.length <= 35 ? 35 : 42;
+    const remaining = totalCells - days.length;
     for (let day = 1; day <= remaining; day++) {
       const d = new Date(year, month + 1, day);
       days.push(getEvaluatedDay(d));

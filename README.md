@@ -1,210 +1,253 @@
-# 🚀 Init Next.js App — Amir App
+# 📖 Qurrotul Uyun - Panduan Rumah Tangga & Adab Pernikahan Islami
 
-Selamat datang di **Amir App**, template Next.js 16 modern berbasis **React 19**, **Tailwind CSS v4.3**, dan **TypeScript 6 (Strict Mode)** dengan dukungan Progressive Web App (PWA) serta integrasi i18n native berbasis cookie tanpa URL prefix.
+Aplikasi web modern dan Progressive Web App (PWA) edukasi fiqih munakahat (pernikahan Islam) berbasis Kitab klasik **Qurrotul 'Uyun bi Syarhi Nadzam Ibni Yamun** (*قرة العيون بشرح نظم ابن يامون*) karya Syekh Muhammad al-Tihami ibn al-Madani Kanun al-Idrisi al-Hasani.
 
-Repositori ini dioptimalkan secara mendalam menggunakan **Bun** sebagai pengelola paket, konfigurasi **ESLint v9**, serta dilengkapi dengan **ID Security Suite** bawaan untuk pengamanan identitas data Anda.
+Aplikasi ini dirancang untuk pasangan suami istri dan calon pengantin dewasa dalam mempelajari adab pernikahan, malam pertama, etika hubungan suami istri (jima'), hak dan kewajiban keluarga sakinah, kumpulan doa mustajab, kalender waktu syar'i, serta pelacak siklus haid dan masa subur islami yang menjaga privasi penuh pengguna.
 
 ---
 
-## 📊 Arsitektur Pengamanan ID (ID Security Suite)
+## 🌟 Fitur Utama
 
-Berikut adalah visualisasi alur pemrosesan data pada dua fitur keamanan utama (Sqids & AES-256-GCM) yang terintegrasi di dalam template ini:
+### 1. Kitab Digital 20 Bab Lengkap
+* **Syarah dan Nadzam Asli**: Memuat 20 bab lengkap yang mencakup seluruh aspek pernikahan dari hukum nikah, kriteria jodoh, walimah, malam pertama, etika cumbu rayu, posisi jima' yang dihalalkan, mandi wajib, hingga hak kewajiban suami istri dan pendidikan anak.
+* **Teks Multi-Format**: Dilengkapi naskah Arab berharakat jelas menggunakan font kaligrafi Amiri, transliterasi Latin, terjemahan Bahasa Indonesia, syarah penjelasan mendalam, serta dalil Al-Qur'an dan Hadits shahih.
+* **Pengaturan Baca**: Kontrol ukuran font dinamis (A- / A+), navigasi pasal yang rapi, tombol salin teks, fitur bagikan (*share*), dan penanda bab favorit.
 
-```mermaid
-graph TD
-    Input[("Input ID / Teks")] --> Decision{"Pilih Metode Keamanan"}
-    
-    %% Obfuscation Path (Sqids)
-    Decision -- "Penyamaran ID (Sqids)" --> SqidsBlock["lib/obfuscator.ts (Sqids)"]
-    SqidsBlock --> |"Encode (Positive Integer)"| ObfHash["Obfuscated Hash (misal: o7vL39)"]
-    ObfHash --> |"Deobfuscate"| SqidsBlock
-    
-    %% Encryption Path (AES)
-    Decision -- "Enkripsi Kriptografis (AES-256-GCM)" --> ServerAction["app/demo-encryption/actions.ts (use server)"]
-    ServerAction --> |"Membaca ENCRYPTION_KEY"| AESGCM["lib/crypto.ts (AES-256-GCM)"]
-    AESGCM --> |"Encrypt & Sign"| EncToken["Base64 URL-Safe Encrypted Token"]
-    EncToken --> |"Decrypt & Verify"| AESGCM
-    
-    %% UI Presentation
-    ObfHash --> UI["Demo Interface / URL SearchParams"]
-    EncToken --> UI
-    
-    style Decision fill:#1a1a1a,stroke:#333,stroke-width:2px,color:#fff
-    style SqidsBlock fill:#312e81,stroke:#4338ca,color:#fff
-    style AESGCM fill:#064e3b,stroke:#047857,color:#fff
-    style ServerAction fill:#0f172a,stroke:#1e293b,color:#fff
+### 2. Kumpulan 13 Doa Mustajab Pernikahan
+* Koleksi doa pilihan dari kitab suci dan sunnah Nabi: doa mendekatkan jodoh, doa usai akad nikah, doa memegang kening/ubun-ubun istri pada malam pertama, doa sebelum dan sesudah jima', niat mandi junub, hingga doa memohon anak saleh dan doa penyejuk hati keluarga (*Qurrata A'yun*).
+* Filter kategori doa: **Jodoh & Akad**, **Malam Pertama**, **Jima' & Bersuci**, **Kehamilan & Anak**, serta **Keluarga Sakinah**.
+* Teks doa lengkap dengan harakat, transliterasi Latin, terjemahan, dan keterangan fadhilah/faedah amalan.
+
+### 3. Panduan Waktu Syar'i (Kalender Hubungan Intim)
+* Klasifikasi waktu syar'i berdasarkan anjuran sunnah dan fiqih:
+  * **Sangat Dianjurkan (Mustahab)**: Malam Jumat, hari Senin, hari Kamis.
+  * **Boleh (Ja'iz)**: Hari Selasa dan Rabu.
+  * **Dimakruhkan (Makruh)**: Malam awal/tengah/akhir bulan kamariah, hari Sabtu.
+  * **Terlarang (Mamnu')**: Saat istri sedang haid/nifas dan siang hari puasa Ramadhan.
+* Mode tampilan: Kalender Bulanan interaktif, Agenda Mingguan, serta Detail Hari dengan fadhilah dan atsar ulama.
+* Konversi kalender Hijriyah dan deteksi otomatis bulan suci Ramadhan (*Syahrul Mubarak*) dengan tampilan ornamen tematik.
+
+### 4. Pelacak Siklus Haid & Masa Subur Islami Terpadu
+* **Engine Fiqih Wanita Mazhab Syafi'i**: Perhitungan otomatis status darah berdasarkan kaidah fiqih: batas minimal haid (24 jam), batas maksimal (15 hari 15 malam), dan masa suci minimal (15 hari 15 malam).
+* **Indikator Status Ibadah Real-Time**: Kejelasan status hukum harian apakah wajib shalat atau haram shalat dan jima'.
+* **Perkiraan Masa Subur & Ovulasi**: Estimasi jendela masa subur (*fertile window*) dan hari ovulasi puncak untuk membantu ikhtiar program kehamilan secara alami.
+* **Panduan Fiqih Ghusl & Istihadlah**: Tata cara mandi wajib bersuci sesuai rukun dan sunnahnya serta panduan hukum darah penyakit (istihadlah).
+* **Pelacak Qadha Puasa Ramadhan**: Fitur pencatatan dan pelacakan pembayaran hutang puasa dengan progress bar interaktif.
+* **Pencatatan Harian (Daily Log)**: Catatan warna darah, volume aliran, dan gejala fisik.
+* **100% Privacy-First**: Semua data siklus biologis disimpan secara lokal di perangkat pengguna (*Local Storage*), tanpa transmisi data sensitif ke server. Mendukung ekspor dan impor cadangan data JSON.
+
+### 5. Pencarian Cepat Global (Search Modal)
+* Pencarian instan untuk menemukan bab kitab, pasal pembahasan, dan doa berdasarkan kata kunci bahasa Indonesia maupun istilah Arab.
+
+### 6. Progressive Web App (PWA) & Offline-First
+* Ditenagai oleh **Serwist Service Worker v9.5**.
+* Dapat dipasang (*installable*) sebagai aplikasi native di Android, iOS, Windows, dan macOS.
+* Mendukung akses offline untuk membaca isi kitab dan doa kapan saja tanpa koneksi internet.
+
+### 7. Desain Islami Modern & Aksesibilitas
+* Sentuhan ornamen geometris Islam elegan: *Tazhib corner illumination*, ornamen *Rub el Hizb*, dan pembatas bermotif islami.
+* Dukungan penuh **Dark Mode** dan **Light Mode** tanpa efek kedip (*FOUC*) menggunakan `next-themes`.
+* Tipografi terkurasi: Amiri untuk kaligrafi Arab dan Geist Sans/Mono untuk antarmuka teks modern.
+* Tata letak responsif (*mobile-first*) dengan *bottom navigation bar* yang nyaman diakses via ponsel pintar.
+
+### 8. Sistem Internasionalisasi (i18n)
+* Arsitektur lokalisasi native berbasis cookie `NEXT_LOCALE` tanpa prefix URL `[lang]`.
+* Mendukung Bahasa Indonesia (default: `id`) dan Bahasa Inggris (`en`).
+
+---
+
+## 📚 Daftar 20 Bab Kitab Qurrotul Uyun
+
+| Bab | Judul Pembahasan | Kategori |
+| --- | ---------------- | -------- |
+| **Bab 1** | Hukum dan Rukun Pernikahan | Nikah |
+| **Bab 2** | Kriteria Memilih Calon Istri & Pasangan Hidup | Nikah |
+| **Bab 3** | Waktu yang Tepat untuk Menikah & Berhubungan Intim | Adab |
+| **Bab 4** | Tata Cara Pesta Pernikahan (Walimah) & Jamuan Islam | Adab |
+| **Bab 5** | Adab Memasuki Kamar Pengantin & Malam Pertama | Adab |
+| **Bab 6** | Tata Cara & Etika Bersenggama (Jima') | Hubungan |
+| **Bab 7** | Posisi & Variasi dalam Bersenggama | Hubungan |
+| **Bab 8** | Doa-Doa Seputar Hubungan Suami Istri | Doa |
+| **Bab 9** | Waktu yang Dimakruhkan untuk Berhubungan | Adab |
+| **Bab 10** | Adab Mandi Junub (Mandi Wajib) & Bersuci | Kesehatan |
+| **Bab 11** | Kewajiban Suami Memberi Nafkah & Mendidik Istri | Hak & Kewajiban |
+| **Bab 12** | Adab & Ketaatan Istri Terhadap Suami | Hak & Kewajiban |
+| **Bab 13** | Kewajiban Mendidik Anak & Membina Generasi | Keluarga |
+| **Bab 14** | Larangan Menyebarkan Rahasia Ranjang | Adab |
+| **Bab 15** | Makanan & Pola Hidup Penguat Vitalitas | Kesehatan |
+| **Bab 16** | Larangan Hubungan Saat Haid & Kifaratnya | Hubungan |
+| **Bab 17** | Hukum Onani / Masturbasi Menurut Syariat | Fiqih |
+| **Bab 18** | Mengatasi Perselisihan (Nusyuz) dalam Rumah Tangga | Hak & Kewajiban |
+| **Bab 19** | Hukum dan Ketentuan Talak (Perceraian) | Fiqih |
+| **Bab 20** | Doa-Doa Rumah Tangga Sakinah Mawaddah Warahmah | Doa |
+
+---
+
+## 🤲 Daftar 13 Kumpulan Doa Mustajab
+
+| ID Doa | Judul Doa | Kategori |
+| ------ | --------- | -------- |
+| `doa-1` | Doa Mendekatkan Jodoh yang Saleh/Salihah | Jodoh |
+| `doa-2` | Doa Usai Ijab Qabul / Akad Nikah | Akad |
+| `doa-3` | Doa Memegang Ubun-Ubun / Kening Istri | Malam Pertama |
+| `doa-4` | Doa untuk Pengantin Baru (*Barakallahu Laka*) | Akad |
+| `doa-5` | Doa Sebelum Bersenggama (Jima') | Jima' |
+| `doa-6` | Doa Saat Mengeluarkan Air Mani | Jima' |
+| `doa-7` | Doa Setelah Selesai Hubungan Suami Istri | Jima' |
+| `doa-8` | Niat Mandi Junub (Mandi Wajib) | Jima' & Bersuci |
+| `doa-9` | Doa Memohon Keturunan Anak yang Saleh | Kehamilan |
+| `doa-10` | Doa Memohon Anak Laki-Laki yang Saleh | Kehamilan |
+| `doa-11` | Doa Keselamatan & Perlindungan Anak Cucu | Keluarga |
+| `doa-12` | Doa Penyejuk Hati Keluarga (*Qurrata A'yun*) | Keluarga |
+| `doa-13` | Doa Terhindar dari Rumah Tangga Toxic & Fitnah | Keluarga |
+
+---
+
+## 💻 Teknologi yang Digunakan
+
+* **Framework**: Next.js 16.3.6 (App Router, Server Components by default)
+* **Frontend Library**: React 19.3.0
+* **Bahasa**: TypeScript 6.0.3 (Strict Mode)
+* **Styling**: Tailwind CSS v4.3.3 (CSS variables via `@theme inline`)
+* **PWA Engine**: Serwist v9.5.13 (`@serwist/next`)
+* **Tema**: `next-themes` v0.4.6 (Dark, Light, System)
+* **Tipografi**: Google Fonts (`Amiri` untuk teks Arab dan `Geist` untuk antarmuka teks)
+* **Keamanan & Utilitas**: Sqids v0.3.0 (ID obfuscation), AES-256-GCM (server cryptography)
+* **Testing Framework**: Vitest v5.0.5 (114 automated unit & integration tests)
+* **Pengelola Paket**: Bun v1.4.2
+* **Linter**: ESLint v9.39.5 (`eslint-config-next` 16.3.6)
+
+---
+
+## 📁 Struktur Direktori Proyek
+
+```
+qurrotul-uyun/
+├── src/
+│   ├── app/                               # Next.js App Router
+│   │   ├── _components/                   # Komponen antarmuka global
+│   │   │   ├── arabic-viewer.tsx          # Komponen penampil teks Arab berharakat
+│   │   │   ├── bottom-nav.tsx             # Navigasi bawah untuk perangkat mobile
+│   │   │   ├── copy-share-buttons.tsx     # Tombol interaktif salin & bagikan
+│   │   │   ├── font-size-control.tsx      # Kontrol ukuran teks Arab/Latin
+│   │   │   ├── footer.tsx                 # Footer aplikasi & disclaimer
+│   │   │   ├── header.tsx                 # Header & bilah navigasi utama
+│   │   │   ├── islamic-ornaments.tsx      # Komponen Tazhib, Fanous, Hilal, Rosette
+│   │   │   ├── language-switcher.tsx      # Pilihan bahasa
+│   │   │   ├── mobile-drawer.tsx          # Laci menu mobile
+│   │   │   ├── search-modal.tsx           # Modal pencarian cepat bab & doa
+│   │   │   └── theme-switcher.tsx         # Pengalih tema gelap/terang
+│   │   ├── doa/                           # Halaman & komponen kumpulan doa
+│   │   ├── favorit/                       # Halaman penanda (bookmark) konten
+│   │   ├── kitab/                         # Halaman pembaca 20 bab kitab
+│   │   ├── panduan-waktu/                 # Halaman & kalender waktu syar'i jima'
+│   │   ├── siklus-haid/                   # Halaman pelacak haid, masa subur & qadha
+│   │   ├── tentang/                       # Halaman profil kitab & pengarang
+│   │   ├── globals.css                    # Pengaturan CSS variabel Tailwind v4
+│   │   ├── layout.tsx                     # Root Layout, font, & structured data SEO
+│   │   ├── manifest.ts                    # Manifest PWA
+│   │   ├── page.tsx                       # Halaman beranda utama
+│   │   ├── providers.tsx                  # Provider wrapper (ThemeProvider)
+│   │   ├── robots.ts                      # Generator robots.txt
+│   │   ├── sitemap.ts                     # Generator sitemap.xml
+│   │   └── sw.ts                          # Service worker Serwist
+│   ├── data/
+│   │   └── qurrotul-uyun.json             # Basis data naskah 20 bab & 13 doa
+│   ├── dictionaries/
+│   │   ├── id.json                        # Terjemahan Bahasa Indonesia
+│   │   └── en.json                        # Terjemahan Bahasa Inggris
+│   ├── i18n/
+│   │   └── config.ts                      # Konfigurasi locale
+│   ├── lib/
+│   │   ├── calendar-engine.ts             # Kalkulasi kalender Hijriyah & waktu jima'
+│   │   ├── cycle-engine.ts                # Engine kalkulasi haid Mazhab Syafi'i & ovulasi
+│   │   ├── kitab-data.ts                  # Helper data kitab, doa, & pencarian
+│   │   ├── crypto.ts                      # Enkripsi & dekripsi AES-256-GCM (server-only)
+│   │   ├── obfuscator.ts                  # Obfuscation ID integer dengan Sqids
+│   │   ├── rate-limiter.ts                # Pengendali laju permintaan request
+│   │   ├── security-guards.ts             # Pemeriksaan keamanan header & payload
+│   │   ├── seo.ts                         # Helper metadata & JSON-LD
+│   │   ├── use-cycle-tracker.ts           # React hook state pelacak haid
+│   │   └── use-favorites.ts               # React hook bookmark favorit
+│   ├── proxy.ts                           # Middleware proxy keamanan
+│   └── types/                             # Definisi tipe TypeScript
+├── public/                                # Aset statis (logo, ikon PWA)
+├── .env.example                           # Template variabel lingkungan
+├── GUIDELINE.md                           # Panduan arsitektur & standar pengkodean
+├── package.json                           # Skrip & dependensi proyek
+├── tsconfig.json                          # Konfigurasi TypeScript Strict
+└── vitest.config.mts                      # Konfigurasi pengujian Vitest
 ```
 
 ---
 
-## ✨ Fitur Utama
-
-1. **Next.js 16 (App Router)** & **React 19**: Memanfaatkan fitur rendering server terbaru (*Server Components by default*).
-2. **Tailwind CSS v4.3 & Theming**: Styling modern berbasis CSS variables (`@theme inline`) dilengkapi `ThemeSwitcher` (`next-themes`) untuk Dark 🌙, Light ☀️, dan System 💻 mode.
-3. **Serwist PWA v9.5**: Service worker luring (*offline-first*) yang tangguh untuk mendukung Progressive Web Application.
-4. **Cookie-Based Native i18n**: Sistem lokalisasi native berbasis cookie `NEXT_LOCALE` tanpa prefix URL `[lang]`, menjaga URL tetap bersih (`/`, `/demo-encryption`). Mendukung Bahasa Indonesia (default: `id`) dan Inggris (`en`).
-5. **ID Security Suite**:
-   * **Sqids Obfuscation**: Mengubah ID integer database (auto-increment) menjadi hash unik ramah URL untuk menyembunyikan detail sensitif database.
-   * **AES-256-GCM Cryptography**: Enkripsi dua arah terautentikasi (*tamper-proof*) berbasis server untuk menjaga privasi data sensitif seperti UUID atau string transaksi.
-6. **Continuous Integration (CI)**: Pipeline GitHub Actions otomatis untuk mendeteksi error linter dan memverifikasi build aplikasi pada setiap Pull Request ke cabang `master`.
-
----
-
-## 📁 Struktur Folder Utama
-
-```
-Init-nextjs-app/
-├── .github/workflows/         # Pipeline CI GitHub Actions (Lint & Build)
-├── src/                       # 📂 Semua Source Code Utama
-│   ├── app/                   # Next.js App Router
-│   │   ├── _components/       # Komponen UI App-wide (ThemeSwitcher, LanguageSwitcher)
-│   │   ├── demo-encryption/   # Halaman & Komponen Demo Keamanan ID
-│   │   │   ├── actions.ts     # Server Actions (use server)
-│   │   │   ├── DemoClient.tsx # Komponen Interaktif Klien
-│   │   │   └── page.tsx       # Halaman utama demo (Server Component)
-│   │   ├── favicon.ico
-│   │   ├── globals.css        # Pengaturan CSS & Tema Tailwind v4
-│   │   ├── layout.tsx         # Root Layout (ThemeProvider, Metadata SEO)
-│   │   ├── manifest.ts        # Web App Manifest PWA
-│   │   ├── page.tsx           # Halaman Utama (Homepage i18n)
-│   │   ├── providers.tsx      # Provider Wrapper (next-themes ThemeProvider)
-│   │   ├── robots.ts          # Generator robots.txt
-│   │   ├── sitemap.ts         # Generator sitemap.xml
-│   │   └── sw.ts              # Service Worker (Serwist)
-│   ├── dictionaries/          # Berkas Terjemahan Bahasa (JSON)
-│   │   ├── id.json            # Bahasa Indonesia (Default)
-│   │   └── en.json            # Bahasa Inggris
-│   ├── i18n/                  # Konfigurasi i18n
-│   │   └── config.ts          # Config locale & tipe Locale
-│   ├── lib/                   # Utilitas Pendukung Server & Client
-│   │   ├── crypto.ts          # Enkripsi & Dekripsi AES-256-GCM (Server-Only)
-│   │   ├── dictionaries.ts    # Dictionary loader (Server-Only)
-│   │   ├── i18n-actions.ts    # Server Action pengubah cookie NEXT_LOCALE
-│   │   ├── i18n-server.ts     # Helper retrieval locale & dictionary (Server-Only)
-│   │   ├── obfuscator.ts      # Penyamaran & Pemulihan ID (Sqids)
-│   │   └── seo.ts             # Utilitas JSON-LD & SEO Metadata
-│   └── proxy.ts               # Proxy middleware ringan
-├── public/                    # Aset statis & Ikon PWA
-├── prompt_ai/                 # Prompt AI & panduan instruksi
-├── .env                       # Variabel environment umum
-├── .env.development           # Overrides dev lokal
-├── .env.production            # Overrides produksi (tanpa rahasia)
-├── .env.example               # Template referensi variabel environment
-├── AGENTS.md                  # Aturan khusus AI Agent (Next.js & Skills)
-├── GUIDELINE.md               # 📌 Panduan arsitektur & standar coding proyek
-├── next.config.ts             # Konfigurasi Next.js
-├── tsconfig.json              # Konfigurasi TypeScript Strict
-├── eslint.config.mjs          # Konfigurasi ESLint v9
-└── package.json               # Dependensi & skrip proyek
-```
-
----
-
-## 🛠️ Panduan Pengembangan
+## 🚀 Panduan Instalasi & Pengembangan Lokal
 
 ### Prasyarat
-Pastikan Anda telah memasang **Bun** (≥ 1.3) di sistem lokal Anda.
+Pastikan sistem Anda telah terpasang:
+* **Bun** (versi ≥ 1.3 direkomendasikan) atau Node.js (versi ≥ 18)
+* Peramban modern dengan dukungan JavaScript aktif
 
-### 1. Pemasangan Dependensi
-Pasang seluruh paket pustaka dengan cepat menggunakan Bun:
+### 1. Kloning Repositori & Masuk ke Direktori
+```bash
+git clone <URL_REPOSITORI>
+cd qurrotul-uyun
+```
+
+### 2. Pemasangan Dependensi
+Pasang semua paket dependensi menggunakan Bun:
 ```bash
 bun install
 ```
 
-### 2. Jalankan Mode Pengembangan
-Jalankan server lokal untuk melihat hasil perubahan secara langsung:
-```bash
-bun run dev
-```
-Buka [http://localhost:3000](http://localhost:3000) di peramban Anda.
-
-### 3. Pemeriksaan Linter (ESLint)
-Pastikan kode Anda bebas dari error linter sebelum melakukan komit:
-```bash
-bun run lint
-```
-
-### 4. Build untuk Produksi
-Verifikasi kelayakan kompilasi proyek Next.js Anda:
-```bash
-bun run build
-```
-
----
-
-## 🌐 Panduan Penggunaan i18n (Internationalization)
-
-Pengaturan bahasa menggunakan cookie `NEXT_LOCALE` tanpa mengubah URL path.
-
-### Di Server Component:
-```typescript
-import { getCurrentDictionary } from "@/lib/i18n-server";
-
-export default async function Page() {
-  const { locale, dict } = await getCurrentDictionary();
-
-  return <h1>{dict.home.title}</h1>;
-}
-```
-
-### Di Client Component:
-Gunakan komponen `LanguageSwitcher` dari `@/app/_components/language-switcher`:
-```tsx
-import { LanguageSwitcher } from "@/app/_components/language-switcher";
-
-export function Header() {
-  return <LanguageSwitcher />;
-}
-```
-
----
-
-## 🔒 Panduan Penggunaan ID Security Suite
-
-### 1. Penyamaran ID (Sqids)
-Cocok untuk mengubah angka ID database (seperti `10543`) menjadi hash string unik pendek seperti `o7vL39` untuk digunakan pada parameter URL tanpa menampilkan ID asli.
-
-```typescript
-import { obfuscateId, deobfuscateId } from "@/lib/obfuscator";
-
-// Proses menyamarkan ID
-const hash = obfuscateId(10543);
-console.log(hash); // Output: "o7vL39" (panjang minimal 6 karakter)
-
-// Proses mengembalikan ke ID asli
-const originalId = deobfuscateId("o7vL39");
-console.log(originalId); // Output: 10543
-```
-
-### 2. Enkripsi Kriptografis (AES-256-GCM)
-Enkripsi terautentikasi super aman untuk mengenkripsi string sensitif secara bolak-balik menggunakan algoritma AES-256-GCM. Fitur ini dilindungi dengan pustaka `"server-only"` sehingga kunci rahasia (`ENCRYPTION_KEY`) tidak akan pernah bocor ke sisi klien peramban.
-
-```typescript
-// PENTING: Hanya dapat dipanggil di Server Components, Server Actions, atau API Routes
-import { encrypt, decrypt } from "@/lib/crypto";
-
-// Proses Enkripsi
-const token = encrypt("user-1234-uuid-secret");
-console.log(token); // Output: Base64 URL-Safe String terenkripsi
-
-// Proses Dekripsi
-const plainText = decrypt(token);
-console.log(plainText); // Output: "user-1234-uuid-secret"
-```
-
-*Catatan: Jika token terenkripsi mengalami manipulasi karakter oleh peretas, proses dekripsi akan secara otomatis mendeteksi kegagalan otentikasi data dan mengembalikan nilai `null` secara aman untuk mencegah serangan injeksi.*
-
----
-
-## 🚀 Konfigurasi Environment Variables
-
-Template ini menggunakan sistem prioritas variabel lingkungan bawaan Next.js. Rahasia kriptografi diatur **tanpa** awalan `NEXT_PUBLIC_` untuk memastikan keamanan penuh di sisi server.
-
-Salin berkas template `.env.example` menjadi `.env.local` untuk konfigurasi lokal Anda:
+### 3. Konfigurasi Variabel Lingkungan
+Salin berkas contoh `.env.example` menjadi `.env.local`:
 ```bash
 cp .env.example .env.local
 ```
 
-### Variabel Utama:
-* `ENCRYPTION_KEY`: Kunci rahasia berukuran **tepat 32 karakter** (256-bit) yang digunakan oleh modul AES-GCM.
-* `SQIDS_ALPHABET`: Deretan karakter kustom yang digunakan oleh Sqids untuk mengacak hash URL yang dihasilkan.
+Variabel yang tersedia:
+* `NEXT_PUBLIC_APP_URL`: Alamat URL aplikasi (contoh: `http://localhost:3000` untuk lokal).
+* `ENCRYPTION_KEY`: Kunci rahasia 32 karakter (256-bit) untuk utilitas modul AES-GCM.
+* `SQIDS_ALPHABET`: Deretan karakter acak unik untuk hash URL Sqids.
+
+### 4. Menjalankan Server Pengembangan
+```bash
+bun run dev
+```
+Akses aplikasi melalui peramban di [http://localhost:3000](http://localhost:3000).
+
+### 5. Menjalankan Pengujian Otomatis
+Jalankan rangkaian tes unit dan integrasi dengan Vitest:
+```bash
+bunx vitest run
+```
+Seluruh 114 skenario pengujian mencakup engine kalender syar'i, engine siklus haid fiqih, komponen ornamen islami, serta modul keamanan proxy.
+
+### 6. Pemeriksaan Kualitas Kode (Linting)
+```bash
+bun run lint
+```
+
+### 7. Membangun untuk Produksi
+```bash
+bun run build
+bun start
+```
+
+---
+
+## 📖 Profil Kitab & Pengarang
+
+* **Nama Lengkap Kitab**: *Qurrotul 'Uyun bi Syarhi Nadzam Ibni Yamun* (*قرة العيون بشرح نظم ابن يامون*)
+* **Pensyarah (Penulis Syarah)**: **Syekh Muhammad al-Tihami ibn al-Madani Kanun al-Idrisi al-Hasani** (wafat 1331 H / 1913 M), ulama besar, muhaddits, dan faqih dari kota Fes, Maroko, bernasab mulia kepada Rasulullah SAW melalui jalur Sayyidina Hasan bin Ali RA.
+* **Pengarang Nadzam (Bait Asli)**: **Syekh Qasim bin Ahmad bin Musa Ibni Yamun al-Tilimsani** (wafat 1010 H).
+* **Makna Nama Kitab**: *Qurrotul 'Uyun* bermakna "Penyejuk Pandangan Mata" atau "Penenang Jiwa", dipetik dari firman Allah SWT dalam Al-Qur'an Surat Al-Furqan ayat 74.
+
+---
+
+## ⚠️ Adab & Disclaimer Pembaca Dewasa
+
+Materi di dalam aplikasi ini memuat edukasi fiqih munakahat (hukum perkawinan Islam) yang ditujukan bagi **pasangan suami istri** dan **calon pengantin usia dewasa**.
+
+Pembaca diharapkan mempelajari materi ini dengan niat menuntut ilmu syar'i, menghidupkan sunnah Rasulullah SAW, memelihara keharmonisan rumah tangga, serta menjauhi hal-hal yang diharamkan oleh Allah SWT. Seluruh pembahasan disajikan dengan bahasa santun, beradab, dan berlandaskan dalil-dalil agama Islam.

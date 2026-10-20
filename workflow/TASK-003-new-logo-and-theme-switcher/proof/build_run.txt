@@ -1,0 +1,40 @@
+$ bun run build
+$ next build --webpack
+▲ Next.js 16.3.6 (webpack)
+- Environments: .env
+✓ Running next.config.ts took 1048ms
+
+  Creating an optimized production build ...
+✓ (serwist) Bundling the service worker script with the URL '/sw.js' and the scope '/'...
+✓ Compiled successfully in 3.2s
+  Running TypeScript ...
+  Finished TypeScript in 2.6s ...
+  Collecting page data using 14 workers ...
+  Generating static pages using 14 workers (0/13) ...
+  Generating static pages using 14 workers (3/13) 
+  Generating static pages using 14 workers (6/13) 
+  Generating static pages using 14 workers (9/13) 
+✓ Generating static pages using 14 workers (13/13) in 955ms
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /doa
+├ ƒ /favorit
+├ ƒ /kitab
+├ ○ /manifest.webmanifest
+├ ƒ /panduan-waktu
+├ ○ /robots.txt
+├ ƒ /siklus-haid
+├ ○ /sitemap.xml
+└ ƒ /tentang
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+# Exit Code: 0
+# Production Next.js 16.3.6 + Serwist v9.5.12 Service Worker build succeeded without warnings or errors.
