@@ -1,0 +1,36 @@
+﻿▲ Next.js 16.3.6 (webpack)
+- Environments: .env
+✓ Running next.config.ts took 696ms
+
+  Creating an optimized production build ...
+✓ (serwist) Bundling the service worker script with the URL '/sw.js' and the scope '/'...
+✓ Compiled successfully in 3.0s
+  Running TypeScript ...
+  Finished TypeScript in 2.8s ...
+  Collecting page data using 13 workers ...
+  Generating static pages using 13 workers (0/12) ...
+  Generating static pages using 13 workers (3/12) 
+  Generating static pages using 13 workers (6/12) 
+  Generating static pages using 13 workers (9/12) 
+✓ Generating static pages using 13 workers (12/12) in 2.6s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /doa
+├ ƒ /favorit
+├ ƒ /kitab
+├ ○ /manifest.webmanifest
+├ ƒ /panduan-waktu
+├ ○ /robots.txt
+├ ○ /sitemap.xml
+└ ƒ /tentang
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

@@ -1,8 +1,12 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Amiri } from "next/font/google";
 import { getCurrentLocale, getCurrentDictionary } from "@/lib/i18n-server";
 import { generatePageSeo, generateOrganizationJsonLd } from "@/lib/seo";
 import { ThemeProvider } from "./providers";
+import { Header } from "./_components/header";
+import { Footer } from "./_components/footer";
+import { BottomNav } from "./_components/bottom-nav";
+import { IslamicBackgroundPattern } from "./_components/islamic-ornaments";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,6 +17,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const amiri = Amiri({
+  variable: "--font-amiri",
+  subsets: ["arabic", "latin"],
+  weight: ["400", "700"],
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -27,7 +37,7 @@ export async function generateMetadata(): Promise<Metadata> {
     appleWebApp: {
       capable: true,
       statusBarStyle: "default",
-      title: dict.metadata.title,
+      title: dict.common.appName,
     },
     formatDetection: {
       telephone: false,
@@ -38,8 +48,8 @@ export async function generateMetadata(): Promise<Metadata> {
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+    { media: "(prefers-color-scheme: light)", color: "#064e3b" },
+    { media: "(prefers-color-scheme: dark)", color: "#0c0a09" },
   ],
   width: "device-width",
   initialScale: 1,
@@ -58,10 +68,10 @@ export default async function RootLayout({
     <html
       lang={locale}
       suppressHydrationWarning
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${amiri.variable} h-full antialiased`}
     >
       <head>
-        {/* JSON-LD Structured Data — Organization */}
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -69,14 +79,18 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-background text-foreground transition-colors selection:bg-primary/20 selection:text-primary">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <IslamicBackgroundPattern />
+          <Header />
+          <main className="flex-1 pb-20 md:pb-8 relative z-10">{children}</main>
+          <Footer />
+          <BottomNav />
         </ThemeProvider>
       </body>
     </html>

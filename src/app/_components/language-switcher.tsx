@@ -6,10 +6,10 @@ import { setLocaleAction } from "@/lib/i18n-actions";
 import type { Locale } from "@/i18n/config";
 
 interface LanguageSwitcherProps {
-  currentLocale: Locale;
+  currentLocale?: Locale;
 }
 
-export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
+export function LanguageSwitcher({ currentLocale = "id" }: LanguageSwitcherProps) {
   const [isPending, startTransition] = useTransition();
   const router = useRouter();
 

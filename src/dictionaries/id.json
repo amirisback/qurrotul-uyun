@@ -1,6 +1,7 @@
 {
   "common": {
-    "appName": "Amir App",
+    "appName": "Qurrotul Uyun",
+    "appTagline": "Panduan Rumah Tangga & Adab Pernikahan Islami",
     "loading": "Memuat...",
     "error": "Terjadi kesalahan",
     "retry": "Coba Lagi",
@@ -10,17 +11,31 @@
     "cancel": "Batal",
     "delete": "Hapus",
     "edit": "Ubah",
-    "search": "Cari",
+    "search": "Cari bab, doa, atau adab...",
     "close": "Tutup",
     "yes": "Ya",
     "no": "Tidak",
     "or": "atau",
-    "and": "dan"
+    "and": "dan",
+    "copy": "Salin",
+    "copied": "Tersalin!",
+    "share": "Bagikan",
+    "favorite": "Favorit",
+    "addToFavorite": "Tambah ke Favorit",
+    "removeFromFavorite": "Hapus dari Favorit",
+    "fontSmall": "A-",
+    "fontLarge": "A+",
+    "fontSize": "Ukuran Font",
+    "readMore": "Baca Selengkapnya",
+    "all": "Semua"
   },
   "nav": {
     "home": "Beranda",
-    "about": "Tentang",
-    "contact": "Kontak",
+    "kitab": "Kitab (Bab)",
+    "doa": "Kumpulan Doa",
+    "panduanWaktu": "Panduan Waktu",
+    "favorit": "Favorit",
+    "tentang": "Tentang",
     "menu": "Menu",
     "language": "Bahasa"
   },
@@ -30,49 +45,52 @@
     "dark": "Gelap",
     "system": "Sistem"
   },
+  "ramadan": {
+    "badge": "Bulan Suci Ramadan",
+    "mubarak": "Syahrul Mubarak"
+  },
   "home": {
-    "title": "Selamat Datang",
-    "subtitle": "Untuk memulai, edit file page.tsx.",
-    "description": "Mencari titik awal atau instruksi lebih lanjut? Kunjungi",
-    "templates": "Template",
-    "learning": "Pusat Belajar",
-    "deployNow": "Deploy Sekarang",
-    "documentation": "Dokumentasi"
+    "title": "Qurrotul Uyun",
+    "subtitle": "Panduan Lengkap Fiqih Rumah Tangga & Adab Pernikahan Sakinah",
+    "description": "Disarikan dari mahakarya Syekh Muhammad al-Tihami ibn al-Madani Kanun al-Idrisi al-Hasani (Syarah Nadzam Ibni Yamun)",
+    "startReading": "Mulai Membaca",
+    "exploreDoa": "Kumpulan Doa",
+    "popularChapters": "Bab Pilihan",
+    "viewAllChapters": "Lihat Semua 20 Bab",
+    "dailyHadith": "Untaian Hikmah Hari Ini",
+    "pillars": {
+      "malamPertama": {
+        "title": "Malam Pertama",
+        "desc": "Adab, shalat sunnah, doa ubun-ubun, dan kelembutan awal pernikahan"
+      },
+      "adabJima": {
+        "title": "Adab Bersenggama",
+        "desc": "Tata cara syar'i, etika cumbu rayu (foreplay), dan posisi yang diperbolehkan"
+      },
+      "kumpulanDoa": {
+        "title": "Doa Pernikahan",
+        "desc": "Kumpulan doa mustajab dari mencari jodoh hingga keturunan saleh"
+      },
+      "waktuJima": {
+        "title": "Waktu Utama",
+        "desc": "Panduan hari dan waktu yang dianjurkan serta yang dimakruhkan"
+      }
+    }
   },
   "metadata": {
-    "title": "Amir App",
-    "description": "Amir App — Aplikasi Web Progressive"
+    "title": "Qurrotul Uyun — Panduan Rumah Tangga & Adab Pernikahan Islami",
+    "description": "Aplikasi edukasi pernikahan Islam berbasis Kitab Qurrotul Uyun. Panduan lengkap adab malam pertama, tata cara jima', kumpulan doa, dan hak kewajiban suami istri."
   },
   "error": {
     "notFound": "Halaman tidak ditemukan",
-    "notFoundDescription": "Maaf, halaman yang Anda cari tidak ada.",
+    "notFoundDescription": "Maaf, bab atau halaman yang Anda cari tidak tersedia.",
     "serverError": "Kesalahan Server",
-    "serverErrorDescription": "Terjadi kesalahan pada server. Silakan coba lagi nanti.",
+    "serverErrorDescription": "Terjadi kendala saat memuat konten. Silakan coba kembali nanti.",
     "goHome": "Kembali ke Beranda"
   },
   "footer": {
-    "copyright": "© {year} Amir App. Semua hak dilindungi.",
-    "madeWith": "Dibuat dengan"
-  },
-  "demo": {
-    "title": "Enkripsi & Penyamaran ID",
-    "subtitle": "Keamanan tingkat tinggi & URL yang bersih untuk Next.js",
-    "intro": "Halaman ini menunjukkan implementasi dari dua teknik pengamanan ID yang telah diintegrasikan ke dalam template ini.",
-    "obfuscationTitle": "1. Penyamaran ID (Sqids)",
-    "obfuscationDesc": "Mengubah ID integer berurutan (misal dari database) menjadi string acak pendek dan ramah URL. Cocok untuk menyembunyikan ID agar tidak ditebak.",
-    "obfuscationPlaceholder": "Masukkan ID angka positif (misal: 12345)",
-    "obfuscateButton": "Samarkan ID",
-    "deobfuscateButton": "Kembalikan ID",
-    "encryptionTitle": "2. Enkripsi Kriptografis (AES-256-GCM)",
-    "encryptionDesc": "Enkripsi tingkat tinggi yang aman, terautentikasi (AES-GCM), dan anti-manipulasi. Hanya berjalan di sisi server (Server Component / Action).",
-    "encryptionPlaceholder": "Masukkan teks atau UUID sensitif",
-    "encryptButton": "Enkripsi Teks",
-    "decryptButton": "Dekripsi Teks",
-    "result": "Hasil",
-    "original": "Asli",
-    "processed": "Hasil Proses",
-    "errorInvalidNumber": "Silakan masukkan angka positif yang valid.",
-    "errorEmptyText": "Teks tidak boleh kosong.",
-    "success": "Sukses!"
+    "copyright": "© {year} Qurrotul Uyun. Berdasarkan Kitab Syarah Nadzam Ibni Yamun.",
+    "disclaimer": "Edukasi syariat pernikahan Islami ditujukan bagi pasangan suami istri dan calon pengantin dewasa.",
+    "madeWith": "Dibuat untuk kemaslahatan umat"
   }
 }

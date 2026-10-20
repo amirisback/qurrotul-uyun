@@ -1,0 +1,142 @@
+bun test v1.4.3 (c6da4a4d3)
+
+cli\index.test.ts:
+(pass) runCli > should show help when no command is provided [0.84ms]
+(pass) runCli > should show help when --help flag is provided [0.18ms]
+(pass) runCli > should call helloCommand when 'hello' command is provided [0.16ms]
+(pass) runCli > should call helloCommand with name when -n flag is provided [0.12ms]
+(pass) runCli > should show error and help for unknown command [0.14ms]
+
+cli\commands\hello.test.ts:
+(pass) helloCommand > should greet World when no name is provided [0.09ms]
+(pass) helloCommand > should greet the provided name [0.05ms]
+
+src\lib\__tests__\calendar-engine.test.ts:
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-01: Calendar Grid & Navigation Engine > generates exactly 35 or 42 grid cells for any month [43.94ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-01: Calendar Grid & Navigation Engine > correctly handles leap year February (29 days in 2028) [4.91ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-01: Calendar Grid & Navigation Engine > formats ISO date deterministically without timezone shift [0.06ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-01: Calendar Grid & Navigation Engine > provides localized Indonesian month-year headers [0.14ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-02 & AC-03: Fiqih Timing Status & Day/Night Split > classifies Kamis Malam (Ba'da Maghrib) as Malam Jumat (Sangat Dianjurkan / Sunnah Muakkad) [0.25ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-02 & AC-03: Fiqih Timing Status & Day/Night Split > classifies Ahad Malam as Malam Senin (Sangat Dianjurkan) [0.19ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-02 & AC-03: Fiqih Timing Status & Day/Night Split > classifies Rabu Malam as Malam Kamis (Sangat Dianjurkan) [0.16ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-02 & AC-03: Fiqih Timing Status & Day/Night Split > classifies Senin Siang as Sangat Dianjurkan (Kelahiran & Kenabian Rasulullah SAW) [0.19ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-02 & AC-03: Fiqih Timing Status & Day/Night Split > classifies Jumat Malam as Malam Sabtu (Dimakruhkan) [0.16ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-02 & AC-03: Fiqih Timing Status & Day/Night Split > classifies Sabtu Siang as Dimakruhkan [0.14ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-02 & AC-03: Fiqih Timing Status & Day/Night Split > classifies Selasa & Rabu daytime as Boleh / Mubah (Blue Badge) [0.20ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-04: Hijri Calculation & Lunar Critical Phase Detection > accurately converts Gregorian date to Umm al-Qura Hijri representation [0.17ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-04: Hijri Calculation & Lunar Critical Phase Detection > detects Malam Purnama (14-16 Hijriah) and marks night slot as Dimakruhkan [3.76ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-04: Hijri Calculation & Lunar Critical Phase Detection > detects Malam Awal Bulan (1 Hijriah) and marks night slot as Dimakruhkan [1.73ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-04: Hijri Calculation & Lunar Critical Phase Detection > detects Malam Akhir Bulan (29-30 Hijriah) and marks night slot as Dimakruhkan [1.09ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-04: Hijri Calculation & Lunar Critical Phase Detection > summarizes Hijri month range across a Gregorian month [0.42ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-05: Highlight Card 'Waktu Utama Terdekat' > returns next upcoming recommended slot from a reference date [0.47ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-05: Highlight Card 'Waktu Utama Terdekat' > gives human countdown text for offset = 0, 1, 2 [0.49ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-07: Agenda 7-Day Computation > generates 7 sequential days starting from reference date [1.34ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-08: Haid Range Overlay & Ramadhan Fasting Fiqih > correctly identifies dates within active haid duration [0.33ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-08: Haid Range Overlay & Ramadhan Fasting Fiqih > ignores haid range if active is false [0.06ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-08: Haid Range Overlay & Ramadhan Fasting Fiqih > clamps duration between 1 and 15 days (Syafi'i fiqih limit) [0.09ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-08: Haid Range Overlay & Ramadhan Fasting Fiqih > overrides all timing to 'terlarang' (Haram Mutlak) when haid is active [0.33ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-08: Haid Range Overlay & Ramadhan Fasting Fiqih > evaluates Ramadhan daytime as Haram Mutlak (Siang Ramadhan) [9.29ms]
+(pass) Calendar Engine - Islamic Timing & Hijri Calculation Test Suite > AC-08: Haid Range Overlay & Ramadhan Fasting Fiqih > isRamadanSeason accurately detects when a date is in Ramadan or not [0.54ms]
+
+src\lib\__tests__\cycle-engine.test.ts:
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-01 & AC-04: Cycle Predictions & Ovulation Window > calculates next period start as exactly 28 days from start date (2026-10-29) [0.58ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-01 & AC-04: Cycle Predictions & Ovulation Window > calculates peak ovulation day on Day 14 (2026-10-14) for 28-day cycle with 14-day luteal phase [0.08ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-01 & AC-04: Cycle Predictions & Ovulation Window > calculates fertile window from 5 days prior (2026-10-09) to 1 day after (2026-10-15) [0.10ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-01 & AC-04: Cycle Predictions & Ovulation Window > evaluates cycle day number accurately [1.13ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-02: Syar'i State Deterministic Evaluation > evaluates active bleeding on day 1 to 7 as 'haid' (Haram shalat, puasa, jima') [0.53ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-02: Syar'i State Deterministic Evaluation > evaluates stopped blood on day 8 without ghusl as 'suci_wajib_mandi' (Wajib Ghusl) [0.55ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-02: Syar'i State Deterministic Evaluation > evaluates stopped blood with confirmed ghusl as 'suci_sempurna' (Halal Ibadah & Jima') [0.23ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-02: Syar'i State Deterministic Evaluation > evaluates bleeding emerging before 15 days of suci as 'istihadlah' (Belum 15 hari suci) [0.34ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-05: Mazhab Syafi'i 15-Day Limit & Istihadlah Transition > transitions blood from haid to istihadlah on Day 16 of continuous bleeding [0.67ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > AC-06: Ramadhan Qadha Fasting Calculator > identifies haid during Ramadhan and generates QadhaPuasaEntry [0.57ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > Helper Functions > calculates diffInDays accurately across dates [0.06ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > Helper Functions > adds days accurately [0.04ms]
+(pass) Cycle Engine - Fiqh Mazhab Syafi'i & Biological Predictions (TASK-002) > Helper Functions > detects bleeding streaks correctly [0.23ms]
+
+src\lib\__tests__\cycle-qa-security.test.tsx:
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 1. Mazhab Syafi'i Purity Interval (Aqalluth-Thuhri: 15 Days) > classifies blood emerging at exactly 14 days of suci as ISTIHADLAH (less than 15 full days) [0.41ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 1. Mazhab Syafi'i Purity Interval (Aqalluth-Thuhri: 15 Days) > classifies blood emerging after exactly 15 full days of suci as HAID (valid new cycle) [0.27ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 2. Mazhab Syafi'i 15-Day Maximum Period Boundary (Aktsarul-Haid: 15 Days) > maintains HAID status up to Day 15, then transitions to ISTIHADLAH on Day 16, 17, and beyond [0.78ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 3. Ramadan Fasting Debt (Qadha Puasa) Edge Cases > correctly identifies Ramadan days (Hijri month 9) and does not add duplicates [0.47ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 3. Ramadan Fasting Debt (Qadha Puasa) Edge Cases > does not charge qadha puasa for days marked with flow 'none' [0.17ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 4. Security, XSS Prevention & Data Sanitization Audit > renders user notes containing malicious XSS script safely escaped without executing HTML [14.22ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 4. Security, XSS Prevention & Data Sanitization Audit > safely handles corrupted or malicious JSON in backup import logic [0.34ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 4. Security, XSS Prevention & Data Sanitization Audit > handles prototype pollution payloads in import schema without polluting global Object [0.25ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 5. Boundary Conditions, Leap Years & Clamped Calculations > clamps abnormal cycle lengths to safe range [21, 45] [0.19ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 5. Boundary Conditions, Leap Years & Clamped Calculations > clamps period duration to Fiqih limits [1, 15] [0.06ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 5. Boundary Conditions, Leap Years & Clamped Calculations > handles leap year February 29 seamlessly [0.12ms]
+(pass) Sandra QA & Security Gate: Mazhab Syafi'i Edge Cases & Security Audit (TASK-002) > 5. Boundary Conditions, Leap Years & Clamped Calculations > handles year transition from December to January accurately [0.06ms]
+
+src\lib\__tests__\proxy-security.test.ts:
+(pass) Security Guards > isSuspiciousPath > should detect suspicious files and sensitive environment paths [0.26ms]
+(pass) Security Guards > isSuspiciousPath > should detect CMS/Admin probes and common exploit endpoints [0.09ms]
+(pass) Security Guards > isSuspiciousPath > should detect path traversal attempts [0.04ms]
+(pass) Security Guards > isSuspiciousPath > should allow valid application paths [0.07ms]
+(pass) Security Guards > isMaliciousBot > should identify automated vulnerability scanners [0.24ms]
+(pass) Security Guards > isMaliciousBot > should allow standard browser user agents [0.09ms]
+
+src\lib\__tests__\proxy.test.ts:
+(pass) Next.js Proxy Handler > should return 403 on suspicious probe path [3.38ms]
+(pass) Next.js Proxy Handler > should return 403 on malicious scanner user-agent [0.42ms]
+(pass) Next.js Proxy Handler > should attach rate limit headers for valid requests [0.84ms]
+(pass) Next.js Proxy Handler > should return 429 when rate limit exceeded on rapid requests [1.51ms]
+
+src\lib\__tests__\rate-limiter.test.ts:
+(pass) Rate Limiter Utility > getClientIp > should prioritize cf-connecting-ip [0.16ms]
+(pass) Rate Limiter Utility > getClientIp > should extract first IP from x-forwarded-for if cf-connecting-ip is missing [0.09ms]
+(pass) Rate Limiter Utility > getClientIp > should fallback to x-real-ip if previous headers are missing [0.06ms]
+(pass) Rate Limiter Utility > getClientIp > should fallback to 127.0.0.1 if no IP headers are present [0.06ms]
+(pass) Rate Limiter Utility > getRouteTier > should return strict tier for auth/sensitive endpoints [0.04ms]
+(pass) Rate Limiter Utility > getRouteTier > should return moderate tier for API endpoints [0.06ms]
+(pass) Rate Limiter Utility > getRouteTier > should return standard tier for general UI routes [0.05ms]
+(pass) Rate Limiter Utility > checkRateLimit > should allow requests under the limit and decrement remaining [0.13ms]
+(pass) Rate Limiter Utility > checkRateLimit > should track different identifiers independently [0.08ms]
+
+src\app\panduan-waktu\__tests__\calendar-waktu.test.tsx:
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > CalendarNav (AC-01 & A11y) > renders month title with live region polite announcements [3.10ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > CalendarNav (AC-01 & A11y) > has 44px minimum touch targets and accessible navigation buttons [1.67ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > CalendarGrid (AC-01, AC-02, ARIA Semantics) > renders with role='grid' and column headers for 7 weekdays [27.41ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > CalendarGrid (AC-01, AC-02, ARIA Semantics) > renders comprehensive color status legend with all 4 fiqih categories [18.58ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > CalendarCell (AC-02 & WCAG AA Contrast) > renders with role='gridcell' and minimum touch target size min-h-[58px] [1.51ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > CalendarCell (AC-02 & WCAG AA Contrast) > applies verified WCAG AA token classes for emerald (sangat-dianjurkan) [0.91ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > CalendarCell (AC-02 & WCAG AA Contrast) > applies verified WCAG AA token classes for amber (makruh/purnama) [0.83ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > CalendarCell (AC-02 & WCAG AA Contrast) > marks Today cell with aria-current='date' and selected cell with aria-pressed='true' [0.82ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > CalendarHero (AC-05: Highlight Card) > renders recommendation hero with action buttons satisfying min 44px touch targets [6.18ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > DateDetail (AC-03 & AC-06: Day/Night Sesi & Doa Modal) > renders distinct Sesi Malam and Sesi Siang boxes with fiqih rationale [3.38ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > DateDetail (AC-03 & AC-06: Day/Night Sesi & Doa Modal) > renders modal with role='dialog' and aria-modal='true' when in mobile view [3.15ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > AgendaView (AC-07: 7-Day Overview) > renders feed of 7 upcoming day cards with day and night statuses [6.41ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > HaidTrackerDialog (AC-08: Haid Settings Modal) > renders accessible modal dialog with date input, stepper, and privacy note [3.47ms]
+(pass) Panduan Waktu Interactive Calendar - Component & Accessibility Test Suite > Anti-Slop Copywriting Audit > strictly contains zero em dashes (—) in rendered UI components [5.55ms]
+
+src\app\siklus-haid\__tests__\siklus-haid.test.tsx:
+(pass) Siklus Haid Interactive Components - Verification Suite (TASK-002) > CycleHeroCard (AC-01 & AC-02: Hero Radial Ring & Status Syar'i) > renders cycle day number, formatted date, and status badge correctly [2.77ms]
+(pass) Siklus Haid Interactive Components - Verification Suite (TASK-002) > CycleHeroCard (AC-01 & AC-02: Hero Radial Ring & Status Syar'i) > displays 'Konfirmasi Mandi Wajib' button when status is suci_wajib_mandi [0.93ms]
+(pass) Siklus Haid Interactive Components - Verification Suite (TASK-002) > CycleStripView (AC-03: 14-Day Strip & Expandable Grid) > renders horizontal strip days and full calendar toggle button [3.63ms]
+(pass) Siklus Haid Interactive Components - Verification Suite (TASK-002) > DailyLogModal (AC-03: Flo-Inspired Bottom Sheet Logger) > renders logging categories, flow intensities, and fiqih cessation checks [4.33ms]
+(pass) Siklus Haid Interactive Components - Verification Suite (TASK-002) > FiqihGuideDrawer (AC-02 & AC-05: Fiqih Thaharah Drawer) > renders Thaharah drawer, Arabic niat mandi wajib text, and tabs [1.99ms]
+(pass) Siklus Haid Interactive Components - Verification Suite (TASK-002) > QadhaTrackerCard (AC-06: Ramadan Fasting Debt) > renders debt counter, checklist, and Hadith reference [2.88ms]
+(pass) Siklus Haid Interactive Components - Verification Suite (TASK-002) > CycleDataBackup (AC-08: Data Privacy Sovereignty) > renders privacy sovereignty banner and export/import actions [3.55ms]
+(pass) Siklus Haid Interactive Components - Verification Suite (TASK-002) > CycleOnboardingModal (AC-01: Profile Setup Modal) > renders configuration form with range inputs and fiqih notes [2.08ms]
+(pass) Siklus Haid Interactive Components - Verification Suite (TASK-002) > Anti-Slop Copywriting Audit (TASK-002) > does not contain banned AI cliches in rendered component markup [2.86ms]
+
+src\app\_components\__tests__\islamic-ornaments.test.tsx:
+(pass) Islamic Ornaments QA & Accessibility Audit > IslamicBackgroundPattern (AC-01) > renders with pointer-events-none and aria-hidden to prevent interaction blocking [1.39ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > IslamicBackgroundPattern (AC-01) > applies subtle opacity defaults strictly bounded between 3% and 6% [0.64ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > IslamicBackgroundPattern (AC-01) > allows custom opacity and class overrides without breaking accessibility [0.80ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > RubElHizb (AC-04) > renders with aria-hidden='true' and 8-point geometric star elements [1.34ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > RubElHizb (AC-04) > supports named sizes (sm, md, lg, xl) [2.02ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > RubElHizb (AC-04) > supports numeric dimensions [0.46ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > RamadanHilal (AC-02) > renders crescent moon with aria-hidden, pointer-events-none, and select-none [1.23ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > RamadanHilal (AC-02) > conditionally renders starlight glow backdrop [2.12ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > RamadanFanous (AC-02) > renders traditional lantern with cord, tiers, and tassel with non-blocking properties [3.28ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > RamadanFanous (AC-02) > toggles ambient glow properly [6.34ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > IslamicDivider (AC-04) > renders symmetrical section divider with Rub el Hizb centerpiece and pointer-events-none [1.51ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > IslamicDivider (AC-04) > supports variant themes (default, gold, emerald) [1.35ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > TazhibCorner (AC-03) > supports all 4 corner positions with appropriate flip/mirror CSS transforms [1.66ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > TazhibCorner (AC-03) > supports custom size prop [0.51ms]
+(pass) Islamic Ornaments QA & Accessibility Audit > RamadanPillBadge (AC-05) > renders readable text with high contrast and decorative crescent [0.72ms]
+
+ 114 pass
+ 0 fail
+ 851 expect() calls
+Ran 114 tests across 11 files. [443.00ms]

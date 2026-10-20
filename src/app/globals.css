@@ -3,48 +3,116 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
-  --background: #ffffff;
-  --foreground: #09090b;
+  --background: #fcfbf9;
+  --foreground: #1c1917;
   --card: #ffffff;
-  --card-foreground: #09090b;
+  --card-foreground: #1c1917;
   --popover: #ffffff;
-  --popover-foreground: #09090b;
-  --primary: #18181b;
-  --primary-foreground: #fafafa;
-  --secondary: #f4f4f5;
-  --secondary-foreground: #18181b;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --accent: #f4f4f5;
-  --accent-foreground: #18181b;
+  --popover-foreground: #1c1917;
+  --primary: #065f46;
+  --primary-foreground: #ffffff;
+  --secondary: #ecfdf5;
+  --secondary-foreground: #064e3b;
+  --muted: #f5f5f4;
+  --muted-foreground: #78716c;
+  --accent: #b45309;
+  --accent-foreground: #ffffff;
   --destructive: #ef4444;
-  --destructive-foreground: #fafafa;
-  --border: #e4e4e7;
-  --input: #e4e4e7;
-  --ring: #18181b;
-  --radius: 0.5rem;
+  --destructive-foreground: #ffffff;
+  --border: #e7e5e4;
+  --input: #e7e5e4;
+  --ring: #059669;
+  --radius: 0.75rem;
+
+  /* Custom theme tokens */
+  --emerald-deep: #064e3b;
+  --gold-warm: #d97706;
+  --sand-warm: #fef3c7;
+
+  /* Cycle Tracker Syar'i Tokens (TASK-002) */
+  --haid-bg: #fff1f2;
+  --haid-border: #fecdd3;
+  --haid-text: #9f1239;
+  --haid-ring: #e11d48;
+  --haid-gradient: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+
+  --suci-wajib-bg: #f0f9ff;
+  --suci-wajib-border: #bae6fd;
+  --suci-wajib-text: #075985;
+  --suci-wajib-ring: #0284c7;
+
+  --suci-bg: #ecfdf5;
+  --suci-border: #a7f3d0;
+  --suci-text: #065f46;
+  --suci-ring: #059669;
+  --suci-gradient: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+
+  --fertile-bg: #f0fdfa;
+  --fertile-border: #99f6e4;
+  --fertile-text: #115e59;
+  --fertile-ring: #0d9488;
+  --ovulation-glow: rgba(13, 148, 136, 0.25);
+
+  --istihadlah-bg: #fffbeb;
+  --istihadlah-border: #fde68a;
+  --istihadlah-text: #854d0e;
+  --istihadlah-ring: #d97706;
 }
 
 .dark {
-  --background: #09090b;
-  --foreground: #fafafa;
-  --card: #09090b;
-  --card-foreground: #fafafa;
-  --popover: #09090b;
-  --popover-foreground: #fafafa;
-  --primary: #fafafa;
-  --primary-foreground: #18181b;
-  --secondary: #27272a;
-  --secondary-foreground: #fafafa;
-  --muted: #27272a;
-  --muted-foreground: #a1a1aa;
-  --accent: #27272a;
-  --accent-foreground: #fafafa;
-  --destructive: #7f1d1d;
-  --destructive-foreground: #fafafa;
-  --border: #27272a;
-  --input: #27272a;
-  --ring: #d4d4d8;
+  --background: #0c0a09;
+  --foreground: #fafaf9;
+  --card: #171513;
+  --card-foreground: #fafaf9;
+  --popover: #171513;
+  --popover-foreground: #fafaf9;
+  --primary: #10b981;
+  --primary-foreground: #022c22;
+  --secondary: #064e3b;
+  --secondary-foreground: #d1fae5;
+  --muted: #292524;
+  --muted-foreground: #a8a29e;
+  --accent: #f59e0b;
+  --accent-foreground: #451a03;
+  --destructive: #991b1b;
+  --destructive-foreground: #ffffff;
+  --border: #292524;
+  --input: #292524;
+  --ring: #34d399;
+
+  /* Custom theme tokens */
+  --emerald-deep: #10b981;
+  --gold-warm: #fbbf24;
+  --sand-warm: #292524;
+
+  /* Cycle Tracker Syar'i Tokens (TASK-002) */
+  --haid-bg: #31070e;
+  --haid-border: #881337;
+  --haid-text: #fecdd3;
+  --haid-ring: #fb7185;
+  --haid-gradient: linear-gradient(135deg, #31070e 0%, #4c0519 100%);
+
+  --suci-wajib-bg: #082f49;
+  --suci-wajib-border: #0c4a6e;
+  --suci-wajib-text: #bae6fd;
+  --suci-wajib-ring: #38bdf8;
+
+  --suci-bg: #022c22;
+  --suci-border: #064e3b;
+  --suci-text: #a7f3d0;
+  --suci-ring: #34d399;
+  --suci-gradient: linear-gradient(135deg, #022c22 0%, #064e3b 100%);
+
+  --fertile-bg: #042f2e;
+  --fertile-border: #134e4a;
+  --fertile-text: #99f6e4;
+  --fertile-ring: #2dd4bf;
+  --ovulation-glow: rgba(45, 212, 191, 0.3);
+
+  --istihadlah-bg: #2d1900;
+  --istihadlah-border: #78350f;
+  --istihadlah-text: #fde68a;
+  --istihadlah-ring: #fbbf24;
 }
 
 @theme inline {
@@ -67,16 +135,94 @@
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
+
+  --color-emerald-deep: var(--emerald-deep);
+  --color-gold-warm: var(--gold-warm);
+  --color-sand-warm: var(--sand-warm);
+
+  --color-haid-bg: var(--haid-bg);
+  --color-haid-border: var(--haid-border);
+  --color-haid-text: var(--haid-text);
+  --color-haid-ring: var(--haid-ring);
+
+  --color-suci-wajib-bg: var(--suci-wajib-bg);
+  --color-suci-wajib-border: var(--suci-wajib-border);
+  --color-suci-wajib-text: var(--suci-wajib-text);
+  --color-suci-wajib-ring: var(--suci-wajib-ring);
+
+  --color-suci-bg: var(--suci-bg);
+  --color-suci-border: var(--suci-border);
+  --color-suci-text: var(--suci-text);
+  --color-suci-ring: var(--suci-ring);
+
+  --color-fertile-bg: var(--fertile-bg);
+  --color-fertile-border: var(--fertile-border);
+  --color-fertile-text: var(--fertile-text);
+  --color-fertile-ring: var(--fertile-ring);
+
+  --color-istihadlah-bg: var(--istihadlah-bg);
+  --color-istihadlah-border: var(--istihadlah-border);
+  --color-istihadlah-text: var(--istihadlah-text);
+  --color-istihadlah-ring: var(--istihadlah-ring);
+
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-arabic: var(--font-amiri), "Traditional Arabic", "Amiri", "Scheherazade New", serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
+
+/* Custom Arabic text helper */
+.font-arabic {
+  font-family: var(--font-amiri), "Traditional Arabic", "Amiri", "Scheherazade New", serif;
+  line-height: 2.2;
+  direction: rtl;
+}
+
+/* Scrollbar aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
+}
+
+/* Gentle Ramadan lantern micro-motion (respects reduced motion) */
+@keyframes lantern-sway {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+
+.animate-lantern-sway {
+  transform-origin: top center;
+  animation: lantern-sway 6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-lantern-sway {
+    animation: none;
+  }
+}
+

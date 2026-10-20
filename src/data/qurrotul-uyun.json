@@ -1,0 +1,736 @@
+{
+  "kitab": [
+    {
+      "id": 1,
+      "nomor": "Bab 1",
+      "judul": "Hukum dan Rukun Pernikahan",
+      "deskripsiRingkas": "Penjelasan mengenai status hukum pernikahan dalam Islam (wajib, sunnah, mubah, makruh, haram) serta 5 rukun sahnya pernikahan.",
+      "kategori": "nikah",
+      "konten": [
+        {
+          "id": "1-1",
+          "subJudul": "Keutamaan dan Anjuran Menikah",
+          "arab": "يَا مَعْشَرَ الشَّبَابِ مَنِ اسْتَطَاعَ مِنْكُمُ الْبَاءَةَ فَلْيَتَزَوَّجْ",
+          "latin": "Yaa ma'syarasy syabaabi manis tathaa'a minkumul baa-ata falyatazawwaj.",
+          "arti": "Wahai para pemuda, barangsiapa di antara kalian telah mampu untuk menikah, maka hendaklah ia menikah.",
+          "penjelasan": "Pernikahan adalah sunnah para Rasul dan benteng utama untuk menjaga kesucian diri serta pandangan. Rasulullah SAW menegaskan bahwa menikah adalah penyempurna separuh agama, sehingga seseorang lebih mampu menundukkan syahwat dan menjaga kehormatannya.",
+          "haditsTerkait": [
+            "HR. Bukhari & Muslim dari Abdullah bin Mas'ud RA",
+            "Ibnu Abbas RA berkata: 'Menikahlah kalian, satu hari dalam pernikahan jauh lebih baik daripada ibadah seribu tahun.'"
+          ]
+        },
+        {
+          "id": "1-2",
+          "subJudul": "Lima Hukum Pernikahan",
+          "penjelasan": "Hukum pernikahan terbagi menjadi 5 sesuai kondisi mukalaf: (1) Wajib bagi yang mampu nafkah dan khawatir terjerumus zina; (2) Sunnah bagi yang mampu dan berhasrat namun masih mampu menahan diri; (3) Mubah bagi yang tidak ada dorongan mendesak maupun kekhawatiran dosa; (4) Makruh bagi yang tidak berhasrat atau belum mampu menafkahi secara layak; (5) Haram bagi yang berniat menyakiti, menzalimi, atau menelantarkan pasangannya."
+        },
+        {
+          "id": "1-3",
+          "subJudul": "Lima Rukun Pernikahan",
+          "penjelasan": "Rukun pernikahan yang harus terpenuhi agar akad sah secara syariat ada 5: (1) Calon Suami yang beragama Islam dan jelas identitasnya; (2) Calon Istri yang halal dinikahi dan bukan mahram; (3) Wali nikah dari pihak perempuan; (4) Dua orang saksi laki-laki yang adil dan baligh; (5) Shighat (Ijab dari wali dan Qabul dari mempelai pria) yang bersambung tanpa jeda pembatas."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nomor": "Bab 2",
+      "judul": "Kriteria Memilih Calon Istri & Pasangan Hidup",
+      "deskripsiRingkas": "Pedoman memilih pasangan terbaik menurut hadits: memprioritaskan agama (kesalehan), nasab, kesuburan, dan wanita yang bukan kerabat terlalu dekat.",
+      "kategori": "nikah",
+      "konten": [
+        {
+          "id": "2-1",
+          "subJudul": "Empat Alasan Menikahi Wanita",
+          "arab": "تُنْكَحُ الْمَرْأَةُ لِأَرْبَعٍ: لِمَالِهَا وَلِحَسَبِهَا وَجَمَالِهَا وَلِدِينِهَا، فَاظْفَرْ بِذَاتِ الدِّينِ تَرِبَتْ يَدَاكَ",
+          "latin": "Tunkahul mar-atu li-arba'in: limaa lihaa wa lihasabihaa wa jamaalihaa wa lidiinihaa, fazhfar bidzaatid diini taribat yadaaka.",
+          "arti": "Wanita dinikahi karena empat perkara: karena hartanya, nasabnya, kecantikannya, dan agamanya. Pilihlah yang memiliki agama, niscaya engkau akan beruntung.",
+          "penjelasan": "Kecantikan dan harta bersifat fana, sementara kesalehan dan akhlak mulia akan menghadirkan kedamaian, keberkahan rizki, dan penjagaan kehormatan rumah tangga sepanjang hayat.",
+          "haditsTerkait": [
+            "HR. Bukhari & Muslim dari Abu Hurairah RA"
+          ]
+        },
+        {
+          "id": "2-2",
+          "subJudul": "Anjuran Memilih Wanita yang Subur dan Penyayang",
+          "penjelasan": "Syekh al-Tihami menerangkan anjuran menikahi wanita yang bersifat penyayang (wadud) dan memiliki potensi subur (walud) agar melahirkan keturunan yang saleh dan membanggakan umat Rasulullah SAW di hari kiamat."
+        },
+        {
+          "id": "2-3",
+          "subJudul": "Hikmah Menikah dengan Bukan Kerabat Terlalu Dekat",
+          "penjelasan": "Kitab Qurrotul Uyun mengutip anjuran para ulama terdahulu agar tidak menikahi kerabat yang terlampau dekat (famili dekat), karena secara medis dan psikologis dapat melemahkan hasrat birahi serta berisiko terhadap kelemahan fisik keturunan."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nomor": "Bab 3",
+      "judul": "Waktu yang Tepat untuk Menikah & Berhubungan Intim",
+      "deskripsiRingkas": "Bulan, hari, dan jam yang utama untuk melangsungkan akad pernikahan serta berhubungan suami istri menurut sunnah.",
+      "kategori": "adab",
+      "konten": [
+        {
+          "id": "3-1",
+          "subJudul": "Sunnah Menikah di Bulan Syawal",
+          "penjelasan": "Sayyidah Aisyah RA meriwayatkan bahwa Rasulullah SAW menikahinya di bulan Syawal dan mulai berumah tangga di bulan Syawal. Ini membatalkan mitos jahiliyah yang menganggap bulan Syawal sebagai bulan sial untuk menikah.",
+          "haditsTerkait": [
+            "HR. Muslim"
+          ]
+        },
+        {
+          "id": "3-2",
+          "subJudul": "Hari-Hari Utama untuk Berhubungan Intim",
+          "penjelasan": "Dalam pembahasan Nadzam Ibni Yamun, hari-hari yang sangat baik untuk berhubungan intim meliputi: Malam Jumat (mengandung keutamaan mandi sunnah Jumat), Hari Senin, dan Hari Kamis. Hubungan di waktu-waktu ini diharapkan melahirkan anak yang cerdas, hafal Al-Qur'an, dan berakhlak mulia."
+        },
+        {
+          "id": "3-3",
+          "subJudul": "Saat Terbaik dalam Sehari",
+          "penjelasan": "Waktu paling ideal adalah sepertiga malam terakhir setelah istirahat cukup, saat makanan dalam perut telah terproses dengan baik, sehingga tubuh bugar dan pikiran tenang. Hubungan di awal malam juga diperbolehkan dengan tetap menjaga kebersihan dan wudhu sebelum tidur."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nomor": "Bab 4",
+      "judul": "Tata Cara Pesta Pernikahan (Walimah) & Jamuan Islam",
+      "deskripsiRingkas": "Hukum mengadakan dan menghadiri walimatul 'ursy serta mengenal 8 tradisi jamuan makan dalam syariat Islam.",
+      "kategori": "adab",
+      "konten": [
+        {
+          "id": "4-1",
+          "subJudul": "Hukum dan Tujuan Walimatul 'Ursy",
+          "arab": "أَوْلِمْ وَلَوْ بِشَاةٍ",
+          "latin": "Awlim walaw bisyaatin.",
+          "arti": "Adakanlah walimah (jamuan pernikahan) walau hanya dengan menyembelih seekor kambing.",
+          "penjelasan": "Walimah bertujuan mengumumkan pernikahan (i'lanun nikah) agar terhindar dari fitnah dan kecurigaan masyarakat, serta sebagai wujud rasa syukur (tasyakkur) atas nikmat karunia Allah SWT.",
+          "haditsTerkait": [
+            "HR. Bukhari dari Abdurrahman bin Auf RA"
+          ]
+        },
+        {
+          "id": "4-2",
+          "subJudul": "Delapan Macam Jamuan Tradisi Islam",
+          "penjelasan": "Kitab Qurrotul Uyun menyebutkan 8 nama jamuan makan: (1) Walimah: jamuan pesta pengantin; (2) Ma'dubah: jamuan makan umum karena undangan silaturahmi; (3) Kairah: jamuan selamatan selesai membangun rumah; (4) Kharass: jamuan menyambut kelahiran anak; (5) A'dzar: jamuan syukuran khitanan; (6) Aqiqah: penyembelihan kambing dan syukuran bayi hari ke-7; (7) Atirah: jamuan makan di bulan Rajab; (8) Naqi'ah: jamuan makan menyambut kepulangan musafir dari perjalanan jauh."
+        },
+        {
+          "id": "4-3",
+          "subJudul": "Adab dan Hal yang Dilarang dalam Pesta",
+          "penjelasan": "Pesta pernikahan dilarang disertai campur baur bebas (ikhtilath) yang mengundang maksiat, pamer harta (riya/sum'ah), minuman memabukkan, dan diskriminasi tamu yang hanya mengundang orang kaya sementara kaum fakir miskin diabaikan."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nomor": "Bab 5",
+      "judul": "Adab Memasuki Kamar Pengantin & Malam Pertama",
+      "deskripsiRingkas": "Tata krama awal pernikahan: bersuci, shalat sunnah berjamaah, mencuci kaki istri, mendoakan kening istri, dan bersikap lemah lembut.",
+      "kategori": "adab",
+      "konten": [
+        {
+          "id": "5-1",
+          "subJudul": "Shalat Sunnah Dua Rakaat Bersama",
+          "penjelasan": "Disunnahkan bagi pengantin baru ketika pertama kali masuk kamar berduaan untuk berwudhu dan mengerjakan shalat sunnah dua rakaat secara berjamaah, di mana suami menjadi imam dan istri menjadi makmum, lalu berdoa memohon keberkahan keluarga."
+        },
+        {
+          "id": "5-2",
+          "subJudul": "Membasuh Kaki Istri",
+          "penjelasan": "Syekh al-Tihami menukil riwayat adab: suami melepaskan alas kaki istri dengan lembut, mencuci kedua kakinya dengan air hangat/sejuk, lalu memercikkan air tersebut di sudut kamar sebagai simbol menolak keburukan dan mendatangkan kasih sayang (mahabbah)."
+        },
+        {
+          "id": "5-3",
+          "subJudul": "Meletakkan Tangan di Kening / Ubun-Ubun Istri",
+          "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا وَخَيْرَ مَا جَبَلْتَهَا عَلَيْهِ، وَأَعُوذُ بِكَ مِنْ شَرِّهَا وَشَرِّ مَا جَبَلْتَهَا عَلَيْهِ",
+          "latin": "Allaahumma innii as-aluka khairahaa wa khaira maa jabaltahaa 'alaih, wa a'uudzu bika min syarrihaa wa syarri maa jabaltahaa 'alaih.",
+          "arti": "Ya Allah, aku memohon kepada-Mu kebaikannya dan kebaikan watak yang Engkau tetapkan padanya, dan aku berlindung kepada-Mu dari keburukannya dan keburukan watak yang Engkau tetapkan padanya.",
+          "penjelasan": "Doa ini dibaca suami seraya memegang ubun-ubun atau kening istrinya dengan penuh kelembutan, menghilangkan rasa takut, canggung, dan menenangkan jiwa istri.",
+          "haditsTerkait": [
+            "HR. Abu Dawud & Ibnu Majah"
+          ]
+        },
+        {
+          "id": "5-4",
+          "subJudul": "Menciptakan Suasana Romantis & Kelembutan",
+          "penjelasan": "Suami dilarang bersikap terburu-buru atau kasar. Hendaklah memulai dengan obrolan ringan, menyuguhkan minuman manis atau kurma, serta melontarkan kata-kata pujian agar terjalin kenyamanan batin."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nomor": "Bab 6",
+      "judul": "Tata Cara & Etika Bersenggama (Jima')",
+      "deskripsiRingkas": "Adab jimak menurut tuntunan syariat Islam: kebersihan, wewangian, pemanasan (foreplay/cumbu rayu), penutup tubuh, dan adab sesudah hubungan.",
+      "kategori": "jima",
+      "konten": [
+        {
+          "id": "6-1",
+          "subJudul": "Menjaga Kebersihan dan Wangi-Wangian",
+          "penjelasan": "Sebelum berhubungan, kedua pasangan dianjurkan menyikat gigi (bersiwak), membersihkan badan, dan memakai wewangian yang disukai pasangan. Hal ini membangkitkan gairah yang menyenangkan dan mencegah bau yang tidak sedap."
+        },
+        {
+          "id": "6-2",
+          "subJudul": "Pentingnya Pemanasan (Mula'abah / Foreplay)",
+          "arab": "لاَ يَقَعَنَّ أَحَدُكُمْ عَلَى امْرَأَتِهِ كَمَا تَقَعُ الْبَهِيمَةُ، وَلْيَكُنْ بَيْنَهُمَا رَسُولٌ. قِيلَ: وَمَا الرَّسُولُ يَا رَسُولَ اللَّهِ؟ قَالَ: الْقُبْلَةُ وَالْكَلاَمُ",
+          "latin": "Laa yaqa'anna ahadukum 'alaa imra-atihii kamaa taqa'ul bahiimah, walyakun bainahumaa rasuul. Qiila: wa mar rasuulu yaa Rasulallaah? Qaala: al-qublatu wal kalaam.",
+          "arti": "Janganlah sekali-kali salah seorang di antara kalian mendatangi istrinya seperti binatang ternak, hendaklah ada utusan di antara keduanya. Ditanyakan: Apakah utusan itu wahai Rasulullah? Beliau menjawab: Ciuman dan kata-kata manis.",
+          "penjelasan": "Suami wajib memperhatikan kepuasan batin istri. Foreplay bertujuan menghidupkan syahwat istri secara bertahap sehingga orgasme dapat tercapai bersamaan, menciptakan keharmonisan emosional yang mendalam."
+        },
+        {
+          "id": "6-3",
+          "subJudul": "Adab Menutup Diri (Tidak Telanjang Bulat)",
+          "penjelasan": "Disunnahkan bersenggama dengan memakai selimut atau penutup, serta tidak bertelanjang bulat seperti dua ekor keledai liar, sebagai bentuk rasa malu kepada para malaikat penjaga."
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "nomor": "Bab 7",
+      "judul": "Posisi & Variasi dalam Bersenggama",
+      "deskripsiRingkas": "Posisi yang diperbolehkan dalam Islam, anjuran posisi terlentang alami, serta posisi dan lubang yang diharamkan secara mutlak.",
+      "kategori": "jima",
+      "konten": [
+        {
+          "id": "7-1",
+          "subJudul": "Kebebasan Posisi pada Lubang yang Benar (Farji)",
+          "arab": "نِسَاؤُكُمْ حَرْثٌ لَّكُمْ فَأْتُوا حَرْثَكُمْ أَنَّىٰ شِئْتُمْ",
+          "latin": "Nisaa-ukum hartsul lakum fa'tuu hartsakum annaa syi'tum.",
+          "arti": "Istri-istrimu adalah ladang bagimu; maka datangilah ladangmu itu dari arah mana saja yang kamu sukai.",
+          "penjelasan": "Islam memberikan kelapangan dalam memilih variasi posisi (dari depan, belakang, miring, atau duduk) selama penetrasi dilakukan pada kemaluan (farji/vagina) yang merupakan tempat menabur benih keturunan.",
+          "haditsTerkait": [
+            "QS. Al-Baqarah: 223"
+          ]
+        },
+        {
+          "id": "7-2",
+          "subJudul": "Posisi Terbaik Menurut Syekh Al-Tihami",
+          "penjelasan": "Posisi yang paling ideal secara medis dan fithrah adalah istri berbaring terlentang dengan bantal sedikit menyangga panggul, dan suami berada di atasnya dengan penuh kelembutan. Posisi ini paling nyaman, memudahkan pembuahan, dan menjaga kesehatan rahim."
+        },
+        {
+          "id": "7-3",
+          "subJudul": "Larangan Hubungan Melalui Dubur (Anal)",
+          "arab": "مَلْعُونٌ مَنْ أَتَى امْرَأَتَهُ فِي دُبُرِهَا",
+          "latin": "Mal'uunun man atam ra-atahuu fii duburihaa.",
+          "arti": "Terlaknat orang yang mendatangi istrinya melalui duburnya.",
+          "penjelasan": "Melakukan hubungan melalui dubur (anus) adalah dosa besar dan haram secara mutlak dalam syariat Islam tanpa ada perbedaan pendapat, karena bertentangan dengan fitrah penciptaan, mendatangkan penyakit berbahaya, dan menyiksa istri.",
+          "haditsTerkait": [
+            "HR. Abu Dawud, An-Nasa'i, & Ahmad"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "nomor": "Bab 8",
+      "judul": "Doa-Doa Seputar Hubungan Suami Istri",
+      "deskripsiRingkas": "Bacaan doa wajib sebelum jima' agar terlindung dari godaan setan, doa ketika mencapai puncak syahwat, dan doa setelahnya.",
+      "kategori": "doa",
+      "konten": [
+        {
+          "id": "8-1",
+          "subJudul": "Doa Sebelum Memulai Jima'",
+          "arab": "بِسْمِ اللَّهِ، اللَّهُمَّ جَنِّبْنَا الشَّيْطَانَ، وَجَنِّبِ الشَّيْطَانَ مَا رَزَقْتَنَا",
+          "latin": "Bismillaahi, Allaahumma jannibnasy syaithaana, wa jannibisy syaithaana maa razaqtanaa.",
+          "arti": "Dengan nama Allah, ya Allah jauhkanlah kami dari setan, dan jauhkanlah setan dari rezeki (anak) yang Engkau anugerahkan kepada kami.",
+          "penjelasan": "Jika ditakdirkan lahir seorang anak dari hubungan tersebut, setan tidak akan mampu memudharatkan atau mencelakakan akidah anak tersebut sepanjang hidupnya.",
+          "haditsTerkait": [
+            "HR. Bukhari & Muslim dari Ibnu Abbas RA"
+          ]
+        },
+        {
+          "id": "8-2",
+          "subJudul": "Doa Ketika Ejakulasi / Mengeluarkan Benih",
+          "arab": "اللَّهُمَّ اجْعَلْ نُطْفَتِي ذُرِّيَّةً طَيِّبَةً",
+          "latin": "Allaahummaj'al nuthfatii dzurriyyatan thayyibah.",
+          "arti": "Ya Allah, jadikanlah air maniku ini benih keturunan yang baik dan saleh.",
+          "penjelasan": "Dianjurkan dibaca di dalam hati ketika air mani keluar, seraya bertahmid memuji keagungan Allah yang telah menganugerahkan kenikmatan dan keturunan."
+        },
+        {
+          "id": "8-3",
+          "subJudul": "Doa Setelah Selesai Hubungan",
+          "arab": "الْحَمْدُ لِلَّهِ الَّذِي خَلَقَ مِنَ الْمَاءِ بَشَرًا فَجَعَلَهُ نَسَبًا وَصِهْرًا",
+          "latin": "Alhamdu lillaahil ladzii khalaqa minal maa-i basyaran faja'alahuu nasaban wa shihraa.",
+          "arti": "Segala puji bagi Allah yang telah menciptakan manusia dari setetes air mani, lalu menjadikannya keturunan dan hubungan kekerabatan.",
+          "penjelasan": "Wujud rasa syukur atas nikmat kenikmatan biologis yang halal dan bernilai ibadah di sisi Allah SWT."
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "nomor": "Bab 9",
+      "judul": "Waktu yang Dimakruhkan untuk Berhubungan",
+      "deskripsiRingkas": "Waktu dan keadaan di mana hubungan intim sebaiknya dihindari demi menjaga kesehatan fisik dan kejernihan spiritual.",
+      "kategori": "adab",
+      "konten": [
+        {
+          "id": "9-1",
+          "subJudul": "Keadaan Fisik yang Perlu Dihindari",
+          "penjelasan": "Syekh al-Tihami menerangkan hubungan intim makruh dilakukan saat: perut terlalu kenyang terisi makanan berat, saat sangat lapar/dahaga, saat tubuh terlampau lelah sehabis bepergian jauh, atau saat mengalami demam tinggi. Hubungan dalam kondisi ini dapat melemahkan daya tahan tubuh dan ginjal."
+        },
+        {
+          "id": "9-2",
+          "subJudul": "Malam-Malam Tertentu Menurut Nadzam",
+          "penjelasan": "Dalam bait Nadzam Ibni Yamun disebutkan makruh berhubungan pada: malam pertama awal bulan kamariah, malam pertengahan bulan (saat bulan purnama tepat), dan malam terakhir akhir bulan. Sebagian ulama menganjurkan menunda hubungan pada waktu-waktu tersebut demi kehati-hatian."
+        },
+        {
+          "id": "9-3",
+          "subJudul": "Tempat-Tempat yang Harus Dihindari",
+          "penjelasan": "Dilarang/makruh berhubungan di tempat terbuka tanpa penghalang (seperti tanah lapang), di atap rumah yang tidak bertirai, atau di bawah pohon yang sedang lebat berbuah demi menjaga kehormatan dan keselamatan."
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "nomor": "Bab 10",
+      "judul": "Adab Mandi Junub (Mandi Wajib) & Bersuci",
+      "deskripsiRingkas": "Kewajiban mandi besar setelah jima', rukun dan sunnah mandi janabat, serta anjuran berwudhu jika ingin mengulang hubungan.",
+      "kategori": "adab",
+      "konten": [
+        {
+          "id": "10-1",
+          "subJudul": "Penyebab Wajibnya Mandi Janabat",
+          "penjelasan": "Mandi junub wajib dilakukan dalam dua kondisi: keluarnya air mani dengan syahwat, atau bertemunya dua kemaluan (masuknya ujung hasyafah ke dalam farji) meskipun tidak keluar air mani."
+        },
+        {
+          "id": "10-2",
+          "subJudul": "Niat dan Tata Cara Mandi Junub",
+          "arab": "نَوَيْتُ الْغُسْلَ لِرَفْعِ الْحَدَثِ الْأَكْبَرِ عَنْ جَمِيعِ الْبَدَنِ فَرْضًا لِلَّهِ تَعَالَى",
+          "latin": "Nawaitul ghusla liraf'il hadatsil akbari 'an jamii'il badani fardhan lillaahi ta'aalaa.",
+          "arti": "Aku berniat mandi untuk menghilangkan hadats besar dari seluruh tubuh, fardhu karena Allah Ta'ala.",
+          "penjelasan": "Rukun mandi junub ada dua: Niat di awal membasuh tubuh, dan meratakan air suci ke seluruh permukaan rambut, kulit, dan lipatan tubuh tanpa ada yang terlewat."
+        },
+        {
+          "id": "10-3",
+          "subJudul": "Anjuran Berwudhu Sebelum Mengulang Hubungan atau Tidur",
+          "penjelasan": "Jika suami istri ingin mengulang hubungan seksual, atau ingin tidur/makan sebelum mandi besar, disunnahkan mencuci kemaluan terlebih dahulu dan berwudhu secara sempurna sebagaimana wudhu untuk shalat."
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "nomor": "Bab 11",
+      "judul": "Kewajiban Suami Memberi Nafkah & Mendidik Istri",
+      "deskripsiRingkas": "Tanggung jawab utama suami: nafkah lahir yang halal, nafkah batin, bimbingan ilmu agama, keadilan, dan perlakuan ma'ruf.",
+      "kategori": "hak-kewajiban",
+      "konten": [
+        {
+          "id": "11-1",
+          "subJudul": "Nafkah Lahir yang Halal",
+          "arab": "أَفْضَلُ دِينَارٍ يُنْفِقُهُ الرَّجُلُ: دِينَارٌ يُنْفِقُهُ عَلَى عِيَالِهِ",
+          "latin": "Afdhalu diinaarin yunfiquhur rajulu: diinaarun yunfiquhuu 'alaa 'iyaalihii.",
+          "arti": "Sebaik-baik dinar yang dinafkahkan oleh seorang laki-laki adalah dinar yang ia nafkahkan untuk keluarganya.",
+          "penjelasan": "Suami wajib mencukupi pangan, sandang, dan tempat tinggal istri dari harta yang bersih dan halal. Harta haram yang masuk ke dalam perut keluarga akan merusak keharmonisan dan menghalangi terkabulnya doa.",
+          "haditsTerkait": [
+            "HR. Muslim"
+          ]
+        },
+        {
+          "id": "11-2",
+          "subJudul": "Kewajiban Mengajarkan Agama",
+          "penjelasan": "Suami bertanggung jawab membimbing istri dalam tauhid, fardhu ain shalat, puasa, adab bersuci (haid/nifas), dan akhlak Islami. Jika suami tidak mampu mengajarkan, ia wajib mengizinkan istrinya belajar kepada guru yang terpercaya."
+        },
+        {
+          "id": "11-3",
+          "subJudul": "Berlaku Adil dan Menyayangi Istri",
+          "penjelasan": "Rasulullah SAW bersabda bahwa orang beriman yang paling sempurna imannya adalah yang paling baik akhlaknya, dan yang terbaik adalah yang paling lembut dan baik kepada istrinya."
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "nomor": "Bab 12",
+      "judul": "Adab & Ketaatan Istri Terhadap Suami",
+      "deskripsiRingkas": "Kewajiban istri menjaga kehormatan rumah tangga, mentaati suami dalam kebaikan, serta fadhilah besar istri salihah.",
+      "kategori": "hak-kewajiban",
+      "konten": [
+        {
+          "id": "12-1",
+          "subJudul": "Ketaatan yang Mengantarkan ke Surga",
+          "arab": "إِذَا صَلَّتِ الْمَرْأَةُ خَمْسَهَا، وَصَامَتْ شَهْرَهَا، وَحَصَّنَتْ فَرْجَهَا، وَأَطَاعَتْ بَعْلَهَا، دَخَلَتْ مِنْ أَيِّ أَبْوَابِ الْجَنَّةِ شَاءَتْ",
+          "latin": "Idzaa shallatil mar-atu khamsahaa, wa shaamat syahrahaa, wa hashshanat farjahaa, wa athaa'at ba'lahaa, dakhalat min ayyi abwaabil jannati syaa-at.",
+          "arti": "Jika seorang wanita mengerjakan shalat lima waktunya, berpuasa di bulannya (Ramadhan), memelihara kehormatan kemaluannya, dan mentaati suaminya, maka ia masuk surga dari pintu mana saja yang ia sukai.",
+          "penjelasan": "Ketaatan istri kepada suami adalah dalam perkara makruf (kebaikan yang tidak melanggar perintah syariat). Istri salihah adalah perhiasan dunia terindah.",
+          "haditsTerkait": [
+            "HR. Ibnu Hibban"
+          ]
+        },
+        {
+          "id": "12-2",
+          "subJudul": "Menjaga Harta dan Rahasia Suami",
+          "penjelasan": "Istri wajib menjaga amanah harta yang dititipkan suami di rumah, menjaga pandangan saat suami tidak ada, serta tidak mengizinkan orang yang tidak disukai suami masuk ke dalam rumah tanpa izinnya."
+        },
+        {
+          "id": "12-3",
+          "subJudul": "Menghargai Pemberian Suami",
+          "penjelasan": "Istri dianjurkan untuk selalu bersyukur atas nafkah dan usaha suaminya, tidak banyak menuntut melebihi kemampuan suami, dan menyambut suami dengan wajah berseri ketika pulang mencari nafkah."
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "nomor": "Bab 13",
+      "judul": "Kewajiban Mendidik Anak & Membina Generasi",
+      "deskripsiRingkas": "Tanggung jawab orang tua menanamkan tauhid, mengajarkan shalat, adab sopan santun, dan keteladanan akhlak mulia.",
+      "kategori": "hak-kewajiban",
+      "konten": [
+        {
+          "id": "13-1",
+          "subJudul": "Hak Anak Atas Orang Tuanya",
+          "penjelasan": "Sebelum anak dilahirkan, hak pertamanya adalah mendapatkan ibu yang salihah. Setelah lahir, haknya adalah memperoleh nama yang baik, disembelihkan aqiqah, diajarkan Al-Qur'an, dan dinikahkan ketika sudah baligh dan mampu."
+        },
+        {
+          "id": "13-2",
+          "subJudul": "Tahapan Mendidik Shalat",
+          "penjelasan": "Rasulullah SAW memerintahkan agar anak-anak diajarkan dan dibiasakan shalat pada usia 7 tahun, ditegaskan dengan disiplin yang mendidik pada usia 10 tahun, serta dipisahkan tempat tidurnya antara anak laki-laki dan perempuan."
+        },
+        {
+          "id": "13-3",
+          "subJudul": "Doa Memohon Keturunan Penyejuk Hati",
+          "penjelasan": "Orang tua senantiasa membasahi lisan dengan doa 'Rabbana hab lana min azwajina wa dzurriyyatina qurrata a'yun' agar anak-anak menjadi pemimpin bagi orang-orang bertakwa."
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "nomor": "Bab 14",
+      "judul": "Larangan Menyebarkan Rahasia Ranjang",
+      "deskripsiRingkas": "Peringatan keras syariat bagi suami atau istri yang membocorkan detail hubungan intim kepada orang lain.",
+      "kategori": "adab",
+      "konten": [
+        {
+          "id": "14-1",
+          "subJudul": "Manusia Terburuk di Hari Kiamat",
+          "arab": "إِنَّ مِنْ أَشَرِّ النَّاسِ عِنْدَ اللَّهِ مَنْزِلَةً يَوْمَ الْقِيَامَةِ، الرَّجُلَ يُفْضِي إِلَى امْرَأَتِهِ وَتُفْضِي إِلَيْهِ، ثُمَّ يَنْشُرُ سِرَّهَا",
+          "latin": "Inna min asyarrin naasi 'indallaahi manzilatan yaumal qiyaamah, ar-rajula yufdhii ilam ra-atihii wa tufdhii ilaihi, tsumma yansyuru sirrahaa.",
+          "arti": "Sesungguhnya termasuk seburuk-buruk kedudukan manusia di sisi Allah pada hari kiamat adalah seorang suami yang menggauli istrinya dan istri yang menggauli suaminya, lalu salah seorang di antara mereka menyebarluaskan rahasia ranjangnya.",
+          "penjelasan": "Hubungan intim adalah amanah suci yang wajib dijaga rapat-rapat. Membocorkan aib atau detail fisik pasangan adalah dosa besar dan mengikis rasa malu.",
+          "haditsTerkait": [
+            "HR. Muslim dari Abu Sa'id Al-Khudri RA"
+          ]
+        },
+        {
+          "id": "14-2",
+          "subJudul": "Pengecualian yang Dibolehkan",
+          "penjelasan": "Menceritakan masalah ranjang hanya diperbolehkan dalam kondisi darurat medis kepada dokter terpercaya, atau dalam ranah hukum pengadilan syariat (qadhi) untuk menyelesaikan sengketa perkawinan."
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "nomor": "Bab 15",
+      "judul": "Makanan & Pola Hidup Penguat Vitalitas",
+      "deskripsiRingkas": "Makanan alami yang dianjurkan dalam tradisi thibbun nabawi untuk menjaga kebugaran jasmani dan keharmonisan batin.",
+      "kategori": "adab",
+      "konten": [
+        {
+          "id": "15-1",
+          "subJudul": "Anjuran Mengonsumsi Makanan Alami Bergizi",
+          "penjelasan": "Syekh al-Tihami menukil anjuran konsumsi makanan bergizi seperti madu murni, kurma, telur ayam kampung rebus, susu murni, dan habbatussauda (jintan hitam) untuk memelihara vitalitas dan daya tahan tubuh suami istri."
+        },
+        {
+          "id": "15-2",
+          "subJudul": "Menjauhi Makanan yang Melemahkan Syahwat di Malam Pertama",
+          "penjelasan": "Dianjurkan menghindari makanan yang terlalu asam, terlalu pahit, atau makanan yang memicu gas berlebih pada malam pengantin agar kondisi fisik tetap prima dan nyaman."
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "nomor": "Bab 16",
+      "judul": "Larangan Hubungan Saat Haid & Kifaratnya",
+      "deskripsiRingkas": "Hukum haram bersenggama ketika istri sedang haid atau nifas, alternatif bercumbu tanpa penetrasi, dan denda kifarat sedekah dinar.",
+      "kategori": "jima",
+      "konten": [
+        {
+          "id": "16-1",
+          "subJudul": "Keharaman Jima' Saat Darah Haid Mengalir",
+          "arab": "وَيَسْأَلُونَكَ عَنِ الْمَحِيضِ ۖ قُلْ هُوَ أَذًى فَاعْتَزِلُوا النِّسَاءَ فِي الْمَحِيضِ",
+          "latin": "Wa yas-aluunaka 'anil mahiidh, qul huwa adzan fa'taziluun nisaa-a fil mahiidh.",
+          "arti": "Mereka bertanya kepadamu tentang haid. Katakanlah: Haid itu adalah suatu kotoran (gangguan). Oleh sebab itu hendaklah kamu menjauhkan diri dari wanita di waktu haid.",
+          "penjelasan": "Penetrasi pada saat haid diharamkan oleh Al-Qur'an dan Sunnah, serta berisiko infeksi parah pada saluran reproduksi. Pasangan boleh bercumbu di atas kain penutup antara pusar dan lutut.",
+          "haditsTerkait": [
+            "QS. Al-Baqarah: 222"
+          ]
+        },
+        {
+          "id": "16-2",
+          "subJudul": "Kifarat bagi yang Melanggar",
+          "penjelasan": "Barangsiapa yang khilaf menyenggamai istrinya saat darah haid masih merah mengalir deras, disunnahkan membayar kifarat sedekah sebesar satu dinar emas murni (sekitar 4,25 gram emas), atau setengah dinar jika darah sudah mulai surut/kecokelatan, serta bertaubat nasuha."
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "nomor": "Bab 17",
+      "judul": "Hukum Onani / Masturbasi Menurut Syariat",
+      "deskripsiRingkas": "Kajian fiqih seputar istimna' (mengeluarkan sperma sendiri), bahaya medisnya, dan solusi pernikahan atau berpuasa.",
+      "kategori": "nikah",
+      "konten": [
+        {
+          "id": "17-1",
+          "subJudul": "Hukum Asal Istimna' (Onani)",
+          "penjelasan": "Mayoritas ulama (Jumhur: Syafi'iyah, Malikiyah, Hanafiyah) menyatakan onani hukumnya haram berdasarkan QS. Al-Mu'minun: 5-7. Namun sebagian fuqaha memberi rukhsah keringanan hanya apabila dorongan syahwat teramat kuat dan dikhawatirkan terjerumus pada dosa zina yang jauh lebih besar."
+        },
+        {
+          "id": "17-2",
+          "subJudul": "Solusi Nabawi untuk Meredam Syahwat",
+          "penjelasan": "Bagi pemuda yang belum mampu menikah, Rasulullah SAW memberikan solusi terbaik yaitu memperbanyak puasa sunnah, karena puasa berfungsi sebagai benteng peredam syahwat (wijaa')."
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "nomor": "Bab 18",
+      "judul": "Mengatasi Perselisihan (Nusyuz) dalam Rumah Tangga",
+      "deskripsiRingkas": "Tahapan mendamaikan perselisihan suami istri secara bijak: nasihat lembut, pisah ranjang sementara, hingga musyawarah keluarga.",
+      "kategori": "hak-kewajiban",
+      "konten": [
+        {
+          "id": "18-1",
+          "subJudul": "Tiga Langkah Menangani Nusyuz",
+          "arab": "فَالصَّالِحَاتُ قَانِتَاتٌ حَافِظَاتٌ لِّلْغَيْبِ بِمَا حَفِظَ اللَّهُ ۚ وَاللَّاتِي تَخَافُونَ نُشُوزَهُنَّ فَعِظُوهُنَّ وَاهْجُرُوهُنَّ فِي الْمَضَاجِعِ وَاضْرِبُوهُنَّ",
+          "latin": "Fa'izhuuhunna wahjuruuhunna fil madhaaji'i wadhribuuhunna.",
+          "arti": "Maka nasihatilah mereka, dan pisahkanlah mereka di tempat tidur mereka, dan pukullah mereka (dengan pukulan yang tidak melukai).",
+          "penjelasan": "Tahapan mengatasi ketidaktaatan: Pertama, menasihati dengan penuh hikmah dan kasih sayang. Kedua, pisah ranjang di dalam rumah untuk introspeksi diri. Ketiga, teguran yang tidak menyakitkan dan sama sekali dilarang memukul wajah atau mencaci maki.",
+          "haditsTerkait": [
+            "QS. An-Nisa: 34"
+          ]
+        },
+        {
+          "id": "18-2",
+          "subJudul": "Mengutus Hakam (Juru Damai)",
+          "penjelasan": "Jika perselisihan memuncak dan dikhawatirkan terjadi perpecahan, syariat memerintahkan mengutus hakam (mediator terpercaya) dari pihak keluarga suami dan keluarga istri untuk mencari titik temu dan mendamaikan keduanya."
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "nomor": "Bab 19",
+      "judul": "Hukum dan Ketentuan Talak (Perceraian)",
+      "deskripsiRingkas": "Ketentuan hukum talak sebagai pintu darurat terakhir, etika menjatuhkan talak sunni, masa iddah, dan larangan talak bid'i.",
+      "kategori": "nikah",
+      "konten": [
+        {
+          "id": "19-1",
+          "subJudul": "Perkara Halal yang Paling Dibenci Allah",
+          "arab": "أَبْغَضُ الْحَلاَلِ إِلَى اللَّهِ تَعَالَى الطَّلاَقُ",
+          "latin": "Abghadhul halaali ilallaahi ta'aalath thalaaq.",
+          "arti": "Perkara halal yang paling dibenci di sisi Allah Ta'ala adalah perceraian (talak).",
+          "penjelasan": "Talak adalah pintu darurat terakhir apabila seluruh ikhtiar perdamaian telah buntu dan kebersamaan justru mendatangkan kemudaratan yang lebih besar bagi kedua belah pihak.",
+          "haditsTerkait": [
+            "HR. Abu Dawud & Ibnu Majah"
+          ]
+        },
+        {
+          "id": "19-2",
+          "subJudul": "Talak Sunni vs Talak Bid'i",
+          "penjelasan": "Talak Sunni adalah talak yang dijatuhkan pada saat istri suci dan belum disetubuhi dalam masa suci tersebut. Talak Bid'i (haram dan berdosa) adalah talak yang dijatuhkan saat istri sedang haid atau pada masa suci yang sudah digauli, karena memperpanjang masa iddah istri."
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "nomor": "Bab 20",
+      "judul": "Doa-Doa Rumah Tangga Sakinah Mawaddah Warahmah",
+      "deskripsiRingkas": "Untaian doa agung dari Al-Qur'an dan Sunnah untuk memohon kelanggengan cinta, ketenangan jiwa, dan perlindungan keluarga dari godaan fitnah.",
+      "kategori": "doa",
+      "konten": [
+        {
+          "id": "20-1",
+          "subJudul": "Doa Penyejuk Pandangan Hati (Qurrata A'yun)",
+          "arab": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+          "latin": "Rabbanaa hab lanaa min azwaajinaa wa dzurriyyaatinaa qurrata a'yuniw waj'alnaa lil muttaqiina imaamaa.",
+          "arti": "Ya Tuhan kami, anugerahkanlah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa.",
+          "penjelasan": "Doa pokok dalam Al-Qur'an yang mencerminkan inti dari nama kitab 'Qurrotul Uyun' (Penyejuk Pandangan Mata), memohon agar pasangan dan anak-anak senantiasa taat beribadah dan menghadirkan kedamaian.",
+          "haditsTerkait": [
+            "QS. Al-Furqan: 74"
+          ]
+        },
+        {
+          "id": "20-2",
+          "subJudul": "Doa Keberkahan Pernikahan Pengantin Baru",
+          "arab": "بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
+          "latin": "Baarakallaahu laka wa baaraka 'alaika wa jama'a bainakumaa fii khair.",
+          "arti": "Semoga Allah memberkahimu dalam suka dan duka, dan semoga Allah mengumpulkan kalian berdua senantiasa di dalam kebaikan.",
+          "penjelasan": "Ucapan doa sunnah yang diajarkan Rasulullah SAW ketika menghadiri dan mendoakan pasangan yang baru melangsungkan akad pernikahan.",
+          "haditsTerkait": [
+            "HR. Abu Dawud, Tirmidzi, & Ibnu Majah"
+          ]
+        }
+      ]
+    }
+  ],
+  "doa": [
+    {
+      "id": "doa-1",
+      "judul": "Doa Mendekatkan Jodoh yang Saleh/Salihah",
+      "kategori": "jodoh",
+      "arab": "رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ",
+      "latin": "Rabbi innii limaa anzalta ilayya min khairin faqiir.",
+      "arti": "Ya Tuhanku, sesungguhnya aku sangat memerlukan sesuatu kebaikan (makanan, jodoh, pertolongan) yang Engkau turunkan kepadaku.",
+      "riwayat": "QS. Al-Qashash: 24 (Doa Nabi Musa AS)",
+      "faedah": "Dibaca memperbanyak setelah shalat fardhu dan tahajud untuk memohon dibukakan pintu jodoh yang berkah."
+    },
+    {
+      "id": "doa-2",
+      "judul": "Doa Usai Ijab Qabul / Akad Nikah",
+      "kategori": "akad",
+      "arab": "الْحَمْدُ لِلَّهِ الَّذِي بِنِعْمَتِهِ تَتِمُّ الصَّالِحَاتُ، اللَّهُمَّ بَارِكْ لَنَا فِي عَقْدِنَا هَذَا",
+      "latin": "Alhamdu lillaahil ladzii bini'matihii tatimmush shaalihaat, Allaahumma baarik lanaa fii 'aqdinaa haadzaa.",
+      "arti": "Segala puji bagi Allah yang dengan nikmat-Nya sempurnalah segala amal kebajikan. Ya Allah berkahilah kami dalam ikatan akad pernikahan ini.",
+      "riwayat": "Doa Tradisi Ulama Fiqih",
+      "faedah": "Dibaca oleh pengantin pria dan para saksi seusai pengucapan ijab qabul disahkan."
+    },
+    {
+      "id": "doa-3",
+      "judul": "Doa Memegang Ubun-Ubun / Kening Istri",
+      "kategori": "malam-pertama",
+      "arab": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا وَخَيْرَ مَا جَبَلْتَهَا عَلَيْهِ، وَأَعُوذُ بِكَ مِنْ شَرِّهَا وَشَرِّ مَا جَبَلْتَهَا عَلَيْهِ",
+      "latin": "Allaahumma innii as-aluka khairahaa wa khaira maa jabaltahaa 'alaih, wa a'uudzu bika min syarrihaa wa syarri maa jabaltahaa 'alaih.",
+      "arti": "Ya Allah, aku memohon kebaikannya dan kebaikan watak yang Engkau tetapkan padanya, dan aku berlindung kepada-Mu dari keburukannya dan keburukan watak yang Engkau tetapkan padanya.",
+      "riwayat": "HR. Abu Dawud & Ibnu Majah",
+      "faedah": "Dibaca suami di malam pertama ketika meletakkan telapak tangan kanannya di atas ubun-ubun istri."
+    },
+    {
+      "id": "doa-4",
+      "judul": "Doa untuk Pengantin Baru (Barakallahu Laka)",
+      "kategori": "akad",
+      "arab": "بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ",
+      "latin": "Baarakallaahu laka wa baaraka 'alaika wa jama'a bainakumaa fii khair.",
+      "arti": "Semoga Allah memberkahimu di waktu bahagia dan memberkahimu di waktu susah, serta mengumpulkan kalian berdua dalam kebaikan.",
+      "riwayat": "HR. Abu Dawud, Tirmidzi & Ibnu Majah",
+      "faedah": "Doa resmi sunnah Rasulullah SAW untuk kedua mempelai di hari pernikahan."
+    },
+    {
+      "id": "doa-5",
+      "judul": "Doa Sebelum Bersenggama (Jima')",
+      "kategori": "jima",
+      "arab": "بِسْمِ اللَّهِ، اللَّهُمَّ جَنِّبْنَا الشَّيْطَانَ، وَجَنِّبِ الشَّيْطَانَ مَا رَزَقْتَنَا",
+      "latin": "Bismillaahi, Allaahumma jannibnasy syaithaana, wa jannibisy syaithaana maa razaqtanaa.",
+      "arti": "Dengan nama Allah, ya Allah jauhkanlah kami dari setan, dan jauhkanlah setan dari rezeki (anak) yang Engkau anugerahkan kepada kami.",
+      "riwayat": "HR. Bukhari & Muslim",
+      "faedah": "Perlindungan mutlak bagi janin dari gangguan dan campur tangan setan seumur hidup."
+    },
+    {
+      "id": "doa-6",
+      "judul": "Doa Saat Mengeluarkan Air Mani",
+      "kategori": "jima",
+      "arab": "اللَّهُمَّ اجْعَلْ نُطْفَتِي ذُرِّيَّةً طَيِّبَةً لَا تَجْعَلْ لِلشَّيْطَانِ فِيهَا نَصِيبًا",
+      "latin": "Allaahummaj'al nuthfatii dzurriyyatan thayyibatan laa taj'al lisy syaithaani fiihaa nashiibaa.",
+      "arti": "Ya Allah, jadikanlah air maniku ini benih keturunan yang baik, dan janganlah Engkau beri bagian bagi setan di dalamnya.",
+      "riwayat": "Nadzam Ibni Yamun / Syarah Qurrotul Uyun",
+      "faedah": "Dibaca di dalam hati pada saat ejakulasi untuk keberkahan bibit keturunan."
+    },
+    {
+      "id": "doa-7",
+      "judul": "Doa Setelah Selesai Hubungan Suami Istri",
+      "kategori": "jima",
+      "arab": "الْحَمْدُ لِلَّهِ الَّذِي خَلَقَ مِنَ الْمَاءِ بَشَرًا فَجَعَلَهُ نَسَبًا وَصِهْرًا وَكَانَ رَبُّكَ قَدِيرًا",
+      "latin": "Alhamdu lillaahil ladzii khalaqa minal maa-i basyaran faja'alahuu nasaban wa shihran wa kaana rabbuka qadiiraa.",
+      "arti": "Segala puji bagi Allah yang menciptakan manusia dari air mani, lalu menjadikannya punya keturunan dan ikatan kekeluargaan.",
+      "riwayat": "QS. Al-Furqan: 54",
+      "faedah": "Wujud syukur atas kenikmatan biologis halal yang bernilai sedekah."
+    },
+    {
+      "id": "doa-8",
+      "judul": "Niat Mandi Junub (Mandi Wajib)",
+      "kategori": "jima",
+      "arab": "نَوَيْتُ الْغُسْلَ لِرَفْعِ الْحَدَثِ الْأَكْبَرِ عَنْ جَمِيعِ الْبَدَنِ فَرْضًا لِلَّهِ تَعَالَى",
+      "latin": "Nawaitul ghusla liraf'il hadatsil akbari 'an jamii'il badani fardhan lillaahi ta'aalaa.",
+      "arti": "Aku berniat mandi untuk menghilangkan hadats besar dari seluruh tubuh, fardhu karena Allah Ta'ala.",
+      "riwayat": "Kitab Fiqih Syafi'iyah",
+      "faedah": "Syarat sahnya bersuci dari hadats besar sebelum mendirikan shalat dan ibadah lainnya."
+    },
+    {
+      "id": "doa-9",
+      "judul": "Doa Memohon Keturunan Anak yang Saleh",
+      "kategori": "kehamilan",
+      "arab": "رَبِّ هَبْ لِي مِنْ لَدُنْكَ ذُرِّيَّةً طَيِّبَةً ۖ إِنَّكَ سَمِيعُ الدُّعَاءِ",
+      "latin": "Rabbi hab lii mil ladunka dzurriyyatan thayyibatan, innaka samii'ud du'aa'.",
+      "arti": "Ya Tuhanku, berilah aku dari sisi-Mu seorang anak yang baik. Sesungguhnya Engkau Maha Pendengar doa.",
+      "riwayat": "QS. Ali 'Imran: 38 (Doa Nabi Zakariya AS)",
+      "faedah": "Dibaca rutin oleh pasangan yang merindukan momongan buah hati."
+    },
+    {
+      "id": "doa-10",
+      "judul": "Doa Memohon Anak Laki-Laki yang Saleh",
+      "kategori": "kehamilan",
+      "arab": "اللَّهُمَّ إِنِّي أُسَمِّي مَا فِي بَطْنِهَا مُحَمَّدًا فَاجْعَلْهُ لِي غُلَامًا ذَكَرًا صَالِحًا",
+      "latin": "Allaahumma innii usammii maa fii bathnihaa Muhammadan faj'alhu lii ghulaaman dzakaran shaalihan.",
+      "arti": "Ya Allah, sesungguhnya aku menamai anak yang ada di dalam kandungan ini dengan nama Muhammad, maka jadikanlah ia bagiku anak laki-laki yang saleh.",
+      "riwayat": "Kitab Qurrotul Uyun (Mujarobat Ulama)",
+      "faedah": "Dibaca suami seraya meletakkan tangan di perut istri yang sedang mengandung pada usia 3-4 bulan."
+    },
+    {
+      "id": "doa-11",
+      "judul": "Doa Keselamatan & Perlindungan Anak Cucu",
+      "kategori": "keluarga",
+      "arab": "أُعِيذُكُمَا بِكَلِمَاتِ اللَّهِ التَّامَّةِ مِنْ كُلِّ شَيْطَانٍ وَهَامَّةٍ، وَمِنْ كُلِّ عَيْنٍ لَامَّةٍ",
+      "latin": "U'iidzukumaa bikalimaatillaahit taammati min kulli syaithaaniw wa haammah, wa min kulli 'ainil laammah.",
+      "arti": "Aku memohon perlindungan untuk kalian berdua dengan kalimat-kalimat Allah yang sempurna dari setiap setan, binatang berbisa, dan dari setiap mata jahat (ain).",
+      "riwayat": "HR. Bukhari",
+      "faedah": "Doa Rasulullah SAW untuk melindungi cucu beliau Hasan dan Husain dari penyakit dan ain."
+    },
+    {
+      "id": "doa-12",
+      "judul": "Doa Penyejuk Hati Keluarga (Qurrata A'yun)",
+      "kategori": "keluarga",
+      "arab": "رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا",
+      "latin": "Rabbanaa hab lanaa min azwaajinaa wa dzurriyyaatinaa qurrata a'yuniw waj'alnaa lil muttaqiina imaamaa.",
+      "arti": "Ya Tuhan kami, anugerahkanlah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati, dan jadikanlah kami imam bagi orang-orang yang bertakwa.",
+      "riwayat": "QS. Al-Furqan: 74",
+      "faedah": "Doa harian yang mengabadikan visi keluarga sakinah mawaddah warahmah."
+    },
+    {
+      "id": "doa-13",
+      "judul": "Doa Terhindar dari Rumah Tangga Toxic & Fitnah",
+      "kategori": "keluarga",
+      "arab": "رَبَّنَا لَا تَجْعَلْنَا فِتْنَةً لِلْقَوْمِ الظَّالِمِينَ وَنَجِّنَا بِرَحْمَتِكَ مِنَ الْقَوْمِ الْكَافِرِينَ",
+      "latin": "Rabbanaa laa taj'alnaa fitnatal lil qawmizh zhaalimiina wa najjinaa birahmatika minal qawmil kaafiriin.",
+      "arti": "Ya Tuhan kami, janganlah Engkau jadikan kami sasaran fitnah bagi kaum yang zalim, dan selamatkanlah kami dengan rahmat-Mu dari kaum yang ingkar.",
+      "riwayat": "QS. Yunus: 85-86",
+      "faedah": "Menjaga rumah tangga dari godaan orang ketiga, sihir, hasad, dan kebencian."
+    }
+  ],
+  "panduanWaktu": [
+    {
+      "hari": "Malam Jumat (Kamis Malam)",
+      "status": "sangat-dianjurkan",
+      "alasan": "Sunnah Muakkad",
+      "keteranganKitab": "Malam yang paling utama menurut mayoritas ulama. Mendapatkan pahala mandi sunnah Jumat keesokan harinya. Diharapkan anak yang dikandung menjadi seorang yang hafidz Al-Qur'an dan berbakti kepada orang tua."
+    },
+    {
+      "hari": "Hari Senin & Malam Senin",
+      "status": "sangat-dianjurkan",
+      "alasan": "Hari Kelahiran & Kenabian Rasulullah SAW",
+      "keteranganKitab": "Diterangkan dalam kitab bahwa anak yang tercipta dari hubungan di hari Senin cenderung ridha terhadap pembagian rezeki dari Allah, berhati lembut, dan mencintai ilmu."
+    },
+    {
+      "hari": "Hari Kamis & Malam Kamis",
+      "status": "sangat-dianjurkan",
+      "alasan": "Hari Pengangkatan Amal Kebaikan",
+      "keteranganKitab": "Dianjurkan bagi suami istri. Anak yang lahir diharapkan menjadi orang yang bijaksana, arif, dan dihormati di tengah masyarakat."
+    },
+    {
+      "hari": "Hari Selasa & Rabu",
+      "status": "baik",
+      "alasan": "Mubah & Diperbolehkan",
+      "keteranganKitab": "Boleh dilakukan kapan saja saat pasangan saling menginginkan. Syariat tidak melarang hari-hari ini, namun tetap utamakan memperhatikan kesiapan fisik dan kondisi kelelahan."
+    },
+    {
+      "hari": "Hari Sabtu & Malam Sabtu",
+      "status": "makruh",
+      "alasan": "Hari Tipu Muslihat & Maksiat Kaum Terdahulu",
+      "keteranganKitab": "Nadzam menyebutkan bahwa hari Sabtu adalah hari di mana iblis dan tipu muslihat turun. Sebagian ulama memakruhkan berjima' pada hari Sabtu jika dikhawatirkan tabiat anak terpengaruh."
+    },
+    {
+      "hari": "Malam Awal, Tengah (Purnama), dan Akhir Bulan",
+      "status": "makruh",
+      "alasan": "Pengaruh Siklus Bulan & Kesehatan Saraf",
+      "keteranganKitab": "Kitab menukil pendapat medis klasik bahwa malam tanggal 1, 15, dan akhir bulan kamariah memiliki tarikan gravitasi cairan tubuh yang kuat, sehingga dimakruhkan berjima' untuk menjaga kestabilan saraf."
+    },
+    {
+      "hari": "Saat Istri Sedang Haid / Nifas",
+      "status": "terlarang",
+      "alasan": "Haram Mutlak Menurut Nash Al-Qur'an",
+      "keteranganKitab": "Haram bersenggama (penetrasi farji) saat darah haid atau nifas masih keluar. Pelanggaran terhadap hal ini diwajibkan bertaubat dan disunnahkan membayar kifarat sedekah satu atau setengah dinar emas."
+    }
+  ]
+}
